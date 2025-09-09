@@ -1,0 +1,101 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0px;
+}
+
+.contacto {
+  display: flex;
+  padding: 50px 50px;
+
+  & .turnos {
+    width: 60%;
+  }
+}
+
+/* Formulario consultas */
+.consultas {
+  width: 40%;
+  padding: 30px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: left;
+
+  & h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #333;
+  }
+
+  & h4 {
+    font-weight: bold;
+    font-size: 1rem;
+    color: #555;
+    margin-top: 20px;
+    margin-bottom: 5px;
+  }
+
+  & p {
+    width: 100%;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    color: #333;
+    cursor: text;
+    font-size: 0;     /* oculta los _ */
+    height: auto;
+  }
+}
+
+.consultas p:nth-of-type(3) { /* utilice selectores específicos para simular el comportamiento del formulario, añadiendo placeholders a los párrafos. */
+  height: 100px;
+}
+
+.consultas h4:nth-of-type(1)+p::before {
+  content: "Escribe tu nombre aquí";
+  color: #aaa;
+  font-size: 12px;
+}
+
+.consultas h4:nth-of-type(2)+p::before {
+  content: "ejemplo@correo.com";
+  color: #aaa;
+  font-size: 12px;
+}
+
+.consultas h4:nth-of-type(3)+p::before {
+  content: "Escribe aquí tu consulta";
+  color: #aaa;
+  font-size: 12px;
+}
+
+/* Mapa interactivo */
+.ubicacion {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 50px;
+  height: 400px;
+  align-items: center;
+
+  & .mapa {
+    width: 60%;
+    padding-right: 50px;
+    display: flex; flex-direction: column;
+
+    & iframe {
+      width: 100%;
+    }
+  }
+
+  & .imagenClinica {
+    width: 40%;
+
+    & img {
+      width: 100%;
+      border-radius: 20px;
+    }
+  }
+}

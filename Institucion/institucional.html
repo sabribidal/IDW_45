@@ -5,19 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/headeryfooter.css">
     <title>Institucional</title>
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="/css/page_institucional.css">
 </head>
 <body>
     <header class="header">
-        <a href="#" class="logo">Clínica SEDAS</a>
-        <nav class="nav container">
-            <ul class="nav-menu" id="nav-menu">
-                <li><a href="/index.html" class="nav-link">Inicio</a></li>
-                <li><a href="/Institucion/institucional.html" class="nav-link">Institucional</a></li>
-                <li><a href="/Institucion/equipo_medico.html" class="nav-link">Equipo Médico</a></li>
-                <li><a href="/contacto.html" class="nav-link">Contacto</a></li>
-            </ul>
-        </nav>        
-    </header>
+    <a href="../index.html" class="logo">
+      <img src="../css/img/logo.png" alt="logo Clinica SEDAS">
+    </a>
+    <nav class="nav container">
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="/index.html" class="nav-link">Inicio</a></li>
+        <li><a href="#" class="nav-link">Institucional</a></li>
+        <li><a href="/Institucion/equipo_medico.html" class="nav-link">Equipo Médico</a></li>
+        <li><a href="/contacto.html" class="nav-link">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
     
     <main>
         <!-- Seccion para seleccionar la informacion institucional de la clinica -->
@@ -30,6 +34,7 @@
                 <li><a href="equipo_medico.html">Equipo medico</a></li>
             </ul>
         </section>
+
         <!-- Seccion de misiones, valores y visiones de la institucion -->
         <!-- El Id de los section son para los enlaces de arriba (los de Mision, valores, vision, autoridades y certificaciones) -->
         <section id="mivavi">
@@ -55,21 +60,68 @@
                 </ul>
             </article>
         </section>
+        
         <!-- Seccion de autoridades de la institucion con nombre y contactos-->
         <section id="autoridades">
             <h1>Autoridades</h1>
             <article>
-                <h3>Director General</h3><p>Dr. Pedro Jose Vera</p>
-                <h3>Subdirector General</h3><p>Dr. Jesus Manuel Lago</p>
-                <h3>Gerencia Administrativa</h3><p>Lic. Daniela Gómez</p>
-                <h3>Gerencia Diagnóstico por Imágenes</h3><p>Dr. Maria Guadalupe Perez</p>
-                <h3>Gerente de Operaciones</h3><p>Dra. Diana Plaza</p>
-                <h3>Gerente de Calidad y Seguridad del Paciente</h3><p>Lic. Laura Martinez</p>
-                <h3>Departamento Recursos Humanos</h3><p>Lic. Mauro Guardiola</p>
-                <h3>Comité de Enfermeria</h3><p>Dra. Maria Jose Carrero</p>
-                <h3>Comité de Historias Clínicas</h3><p>Lic. Jorge Luis Gamero</p>
+                <div class="card_autoridades">
+                    <img src="../css/img/autoridades/pedro.png" alt="">
+                    <div>
+                        <h3>Director General</h3><p>Dr. Pedro Jose Vera</p>
+                    </div>
+                </div>
+                <div class="card_autoridades">
+                    <img src="../css/img/autoridades/jesus.png" alt="">
+                    <div>
+                        <h3>Subdirector General</h3><p>Dr. Jesus Manuel Lago</p>
+                    </div>
+                </div>
+                <div class="card_autoridades">
+                    <img src="../css/img/autoridades/daniela.png" alt="">
+                    <div>
+                        <h3>Gerencia Administrativa</h3><p>Lic. Daniela Gómez</p>
+                    </div>
+                </div>
+                <div class="card_autoridades">
+                    <img src="../css/img/autoridades/maria.png" alt="">
+                    <div>
+                        <h3>Gerencia Diagnóstico por Imágenes</h3><p>Dr. Maria Guadalupe Perez</p>
+                    </div>
+                </div>
+                <div class="card_autoridades">
+                    <img src="../css/img/autoridades/diana.png" alt="">
+                    <div>
+                        <h3>Gerente de Operaciones</h3><p>Dra. Diana Plaza</p>
+                    </div>
+                </div>
+                <div class="card_autoridades">
+                    <img src="../css/img/autoridades/laura.png" alt="">
+                    <div>
+                        <h3>Gerente de Calidad y Seguridad del Paciente</h3><p>Lic. Laura Martinez</p>
+                    </div>
+                </div>
+                <div class="card_autoridades">
+                    <img src="../css/img/autoridades/mauro.png" alt="">
+                    <div>
+                        <h3>Departamento Recursos Humanos</h3><p>Lic. Mauro Guardiola</p>
+                    </div>
+                </div>
+                <div class="card_autoridades">
+                    <img src="../css/img/autoridades/maria_jose.png" alt="">
+                    <div>
+                        <h3>Comité de Enfermeria</h3><p>Dra. Maria Jose Carrero</p>
+                    </div>
+                </div>
+                <div class="card_autoridades">
+                    <img src="../css/img/autoridades/jorge.png" alt="">
+                    <div>
+                        <h3>Comité de Historias Clínicas</h3><p>Lic. Jorge Luis Gamero</p>
+                    </div>
+                </div>
             </article>
         </section>
+
         <!-- Muestra la historia de la institucion  -->
         <section id="historia">
             <h1>Historia</h1>
@@ -78,9 +130,8 @@
             Desde nuestros inicios, nos hemos dedicado a la salud y el bienestar de la comunidad. Comenzamos como un pequeño consultorio, pero gracias a la confianza de nuestros pacientes y al incansable trabajo de nuestro equipo, hemos crecido y evolucionado.
             A lo largo de los años, hemos integrado tecnología de vanguardia y expandido nuestras especialidades, siempre con el objetivo de ofrecer la atención más completa y segura. Cada paso que hemos dado ha sido un reflejo de nuestro compromiso con la innovación y, sobre todo, con las personas que ponen su salud en nuestras manos.
             Hoy, la Clínica IDW S.A es un referente de calidad y calidez. Nuestro legado no solo se mide en años de servicio, sino en las vidas que hemos ayudado a mejorar y en la confianza que hemos construido con cada paciente. Estamos orgullosos de nuestro pasado y listos para seguir construyendo un futuro saludable para todos.</p>
-        </section>
-        <!-- Muestra los logros y avances que logro la institucion -->
-        <section>
+
+            <!-- Muestra los logros y avances que logro la institucion -->
             <h3>Innovación y Tecnología</h3>
             <p>Fuimos los pioneros en la región en la implementación de Inteligencia Artificial (IA) en Diagnóstico por Imagen. Esta inversión nos permite ofrecer diagnósticos más precisos y tratamientos de vanguardia.</p>
             <h3>Compromiso con la Comunidad </h3>
@@ -88,17 +139,17 @@
             <h3>Cuidado Centrado en el Paciente</h3>
             <p>Logramos una tasa de satisfacción del paciente del 93% en nuestras encuestas anuales, un testimonio de nuestro enfoque en la empatía, el trato personalizado y la calidad humana de nuestro servicio.</p> 
         </section>
+
         <!-- Certificaciones obtenidas por la institucion  -->
         <section id="certificaciones">
             <h1 >Certificaciones</h1>
-            <article>
-            <img src="img/Logo-nvo.png" alt="acreditacion" height="50">
-            <img src="img/entrerios.png" alt="acreditacion" height="50">
-            <img src="img/itaes.png" alt="acreditacion"
-            height="50">
-            <img src="img/ISO-9001.png" alt="acreditacion" height="70">
-            <img src="img/medal.png" alt="acreditacion" height="50">
-            <img src="img/Incucai_Argentina.svg.png" alt="acreditacion" height="50">
+            <article class="certificaciones">
+            <img src="../css/img/certificaciones/Logo-nvo.png" alt="acreditacion">
+            <img src="../css/img/certificaciones/entrerios.png" alt="acreditacion">
+            <img src="../css/img/certificaciones/itaes.png" alt="acreditacion">
+            <img src="../css/img/certificaciones/ISO-9001.png" alt="acreditacion">
+            <img src="../css/img/certificaciones/medal.png" alt="acreditacion">
+            <img src="../css/img/certificaciones/Incucai_Argentina.svg.png" alt="acreditacion">
             </article>
         </section>
     </main>

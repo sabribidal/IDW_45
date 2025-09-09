@@ -2,15 +2,16 @@
 /*----------------- Estilos para el encabezado ------------------*/
 .header {
     background: linear-gradient(135deg, #a8e6cf 0%, #88d8a3 100%);
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     position: sticky;
     top: 0;
     z-index: 1000;
+    display: flex;
+    justify-content: space-around;
 }
 
 .container {
     max-width: 1200px;
-    margin: 0 auto;
     padding: 0 20px;
 }
 
@@ -22,18 +23,10 @@
 }
 
 .logo {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 2rem;
-    font-weight: bold;
-    color: #2c5530;
-    text-decoration: none;
-    transition: color 0.3s ease;
-    padding: 0.5rem 1rem;
-    border-radius: 25px;
-}
-
-.logo:hover {
-    color: #1a3a1d;
+    & img {
+        height: 100px;
+        margin: 10px 0px;
+    }
 }
 
 .nav-menu {
