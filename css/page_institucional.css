@@ -1,4 +1,6 @@
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -99,7 +101,7 @@ main {
 
   /* cards */
   & article {
-    width: 250px;
+    width: 280px;
     height: 350px;
     perspective: 1000px;
     margin: 20px;
@@ -117,28 +119,42 @@ main {
         backface-visibility: hidden;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
         border-radius: 10px;
         overflow: hidden;
-        padding: 15px;
         background-color: #e9ecef;
 
-        & h4 {
-          margin-bottom: 10px;
-        }
-      }
+        & .card_img {
+          height: 65%;
+          width: 100%;
 
-      & img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        margin-bottom: 10px;
-        border-radius: 10px;
+          & img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+
+        & .card_especialidad {
+          margin: 10px 10px 20px 10px;
+
+          & div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+
+          & p {
+            margin: 0px 0px 0px 20px;
+          }
+        }
+
       }
 
       & .card_back {
         transform: rotateY(180deg);
+        padding: 15px;
       }
     }
   }
