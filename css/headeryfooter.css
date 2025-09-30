@@ -14,26 +14,29 @@
     max-width: 1200px;
     padding: 0 20px;
 }
-
-.nav {
+/* .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem 0;
-}
+} 
 
-.logo {
-    & img {
+.logo img {
+       & img {
         height: 100px;
         margin: 10px 0px;
     }
 }
+.logo img:hover {
+    transform: scale(1.1);
+} 
 
 .nav-menu {
     display: flex;
     list-style: none;
     gap: 2rem;
 }
+*/
 
 .nav-link {
     color: #2c5530;
