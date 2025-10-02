@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Equipo Medico</title>
     <!-- Link CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/headeryfooter.css">
     <link rel="stylesheet" href="../css/page_institucional.css">
 </head>
@@ -29,27 +30,28 @@
     -->
     <header class="header">
         <nav class="navbar navbar-expand-md">
-        <div class="contanier-fluid">  
+            <div class="contanier-fluid d-flex flex-column align-items-center">
                 <!--<a href="#" class="logo"> -->
                 <a class="navbar-brand" href="#">
-                    <img src="/css/img/logo.png" alt="">
+                    <img src="../css/img/logo.png" alt="" width="150">
                 </a>
                 <!-- boton del menu responsive -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavegacion" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavegacion"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
                 </button>
-                
+
                 <!-- menu -->
                 <div class="collapse navbar-collapse" id="menuNavegacion">
-                <!-- <nav class="nav container"> -->
-                <!-- <ul class="nav-menu" id="nav-menu"> -->
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item"><a href="../index.html" class="nav-link">Inicio</a></li>
-                    <li class="nav-item"><a href="institucional.html" class="nav-link">Institucional</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Equipo Médico</a></li>
-                    <li class="nav-item"><a href="../contacto.html" class="nav-link">Contacto</a></li>
-                </ul>
-                <!-- </nav> -->
+                    <!-- <nav class="nav container"> -->
+                    <!-- <ul class="nav-menu" id="nav-menu"> -->
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a href="../index.html" class="nav-link">Inicio</a></li>
+                        <li class="nav-item"><a href="institucional.html" class="nav-link">Institucional</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Equipo Médico</a></li>
+                        <li class="nav-item"><a href="../contacto.html" class="nav-link">Contacto</a></li>
+                    </ul>
+                    <!-- </nav> -->
                 </div>
             </div>
         </nav>
@@ -62,411 +64,269 @@
     </div>
 
     <section id="eq_medico">
-        <article>
-            <div class="card">
-                <div class="card_face card_front">
-                    <div class="card_img">
-                        <img src="../css/img/medicos/pedro.png" alt="">
-                    </div>
-                    <div class="card_especialidad">
-                        <h3>Dr. Pedro Manuel del Castillo</h3>
-                        <div>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
-                                color="#2c5530" fill="none">
-                                <path
-                                    d="M10.4107 19.9677C7.58942 17.858 2 13.0348 2 8.69444C2 5.82563 4.10526 3.5 7 3.5C8.5 3.5 10 4 12 6C14 4 15.5 3.5 17 3.5C19.8947 3.5 22 5.82563 22 8.69444C22 13.0348 16.4106 17.858 13.5893 19.9677C12.6399 20.6776 11.3601 20.6776 10.4107 19.9677Z"
-                                    stroke="#2c5530" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
-                                </path>
-                            </svg>
-                            <p>Cardiología Clínica e Intervencionista</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="card_face card_back">
-                    <h4>Formación academica</h4>
-                    <ul>
-                        <li>Médico, Universidad de Buenos Aires (UBA)</li>
-                        <li>Especialidad en Cardiología, Hospital José de San Martín, Buenos Aires</li>
-                        <li>Especialidad en Hemodinamia y Cardiologia Intervencionista, Sanatorio Allende, Córdoba</li>
-                    </ul>
-                </div>
-            </div>
-        </article>
 
-        <article>
-            <div class="card">
-                <div class="card_face card_front">
-                    <div class="card_img">
-                        <img src="../css/img/medicos/vanessa.png" alt="">
-                    </div>
-                    <div class="card_especialidad">
-                        <h3>Dra. Vanessa Gracia</h3>
-                        <div>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
-                                color="#2c5530" fill="none">
-                                <circle cx="12" cy="8" r="6" stroke="#2c5530" stroke-width="1"></circle>
-                                <path
-                                    d="M16.874 12C17.5826 13.037 18 14.3093 18 15.6842C18 16.5017 17.8524 17.2829 17.5838 18M7.12605 12C6.41738 13.037 6 14.3093 6 15.6842C6 19.1723 8.68629 22 12 22C14.5371 22 16.7064 20.3424 17.5838 18M17.5838 18C14.8509 16.8 12.0559 14.8333 11 14"
-                                    stroke="#2c5530" stroke-width="1" stroke-linecap="round"></path>
-                                <path
-                                    d="M12 2C11.0059 2 10.2 2.7835 10.2 3.75C10.2 4.7165 11.0059 5.5 12 5.5C12.461 5.5 12.8815 5.3315 13.2 5.0544"
-                                    stroke="#2c5530" stroke-width="1" stroke-linecap="round"></path>
-                                <path d="M10 8H10.0081M14 8H14.0081" stroke="#2c5530" stroke-width="1"
-                                    stroke-linecap="round"></path>
-                            </svg>
-                            <p>Ginecologia y Obsteticia</p>
-                        </div>
-                    </div>
+        <div class="card m-2" style="width: 18rem;">
+            <img src="../css/img/medicos/pedro.png" class="card-img-top" alt="...">
+            <div class="card-body d-flex flex-column align-items-center">
+                <h5 class="card-title">Dr. Pedro del Castillo</h5>
+                <div class="d-flex align-items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="none">
+                        <path
+                            d="M10.4107 19.9677C7.58942 17.858 2 13.0348 2 8.69444C2 5.82563 4.10526 3.5 7 3.5C8.5 3.5 10 4 12 6C14 4 15.5 3.5 17 3.5C19.8947 3.5 22 5.82563 22 8.69444C22 13.0348 16.4106 17.858 13.5893 19.9677C12.6399 20.6776 11.3601 20.6776 10.4107 19.9677Z"
+                            stroke="#2c5530" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+                        </path>
+                    </svg>
+                    <p class="card-text ms-2">Cardiología Clínica</p>
                 </div>
-                <div class="card_face card_back">
-                    <h4>Formación academica</h4>
-                    <ul>
-                        <li>Médica, Universidad Nacional de Córdoba (UNC)</li>
-                        <li>Residencia en Ginecologia y Obsteticia, Hospital Materno Neonatal, Córdoba</li>
-                        <li>Especialista en Cirugía Endoscópica Ginecológica, Sanatorio Güemes, Buenos Aires</li>
-                    </ul>
-                </div>
+                <a href="#" class="btn btn_turno w-100 mt-3">Agendar un turno</a>
             </div>
-        </article>
+        </div>
 
-        <article>
-            <div class="card">
-                <div class="card_face card_front">
-                    <div class="card_img">
-                        <img src="../css/img/medicos/antonio.png" alt="">
-                    </div>
-                    <div class="card_especialidad">
-                        <h3>Dr. Antonio Javier Gonzalez</h3>
-                        <div>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
-                                color="#2c5530" fill="none">
-                                <path
-                                    d="M17.3997 5.83806C17.8288 5.40901 18.3665 5.15489 18.9243 5.07568M18.9243 5.07568C19.7347 4.96061 20.5874 5.21474 21.2107 5.83806C22.2631 6.89044 22.2631 8.59667 21.2107 9.64905C20.3628 10.497 19.0904 10.6617 18.0775 10.1432C17.6635 9.93132 17.1331 9.91564 16.8043 10.2445L10.2445 16.8043C9.91564 17.1331 9.93132 17.6635 10.1432 18.0775C10.6617 19.0904 10.497 20.3628 9.64904 21.2107C8.59667 22.2631 6.89044 22.2631 5.83806 21.2107C5.21474 20.5874 4.96061 19.7347 5.07568 18.9243M18.9243 5.07568C19.0394 4.26531 18.7853 3.41261 18.1619 2.78928C17.1096 1.73691 15.4033 1.73691 14.351 2.78928C13.503 3.6372 13.3383 4.90961 13.8568 5.92247C14.0687 6.33646 14.0844 6.86686 13.7555 7.19572L7.19572 13.7555C6.86686 14.0844 6.33646 14.0687 5.92247 13.8568C4.90961 13.3383 3.6372 13.503 2.78928 14.351C1.73691 15.4033 1.73691 17.1096 2.78928 18.1619C3.4126 18.7853 4.26532 19.0394 5.07568 18.9243M6.60026 18.1619C6.17121 18.591 5.63348 18.8451 5.07568 18.9243"
-                                    stroke="#2c5530" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
-                                </path>
-                            </svg>
-                            <p>Traumatología y Ortopedia</p>
-                        </div>
-                    </div>
+        <div class="card m-2" style="width: 18rem;">
+            <img src="../css/img/medicos/vanessa.png" class="card-img-top" alt="...">
+            <div class="card-body d-flex flex-column align-items-center">
+                <h5 class="card-title">Dra. Vanessa Gracia</h5>
+                <div class="d-flex align-items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="none">
+                        <circle cx="12" cy="8" r="6" stroke="#2c5530" stroke-width="1"></circle>
+                        <path
+                            d="M16.874 12C17.5826 13.037 18 14.3093 18 15.6842C18 16.5017 17.8524 17.2829 17.5838 18M7.12605 12C6.41738 13.037 6 14.3093 6 15.6842C6 19.1723 8.68629 22 12 22C14.5371 22 16.7064 20.3424 17.5838 18M17.5838 18C14.8509 16.8 12.0559 14.8333 11 14"
+                            stroke="#2c5530" stroke-width="1" stroke-linecap="round"></path>
+                        <path
+                            d="M12 2C11.0059 2 10.2 2.7835 10.2 3.75C10.2 4.7165 11.0059 5.5 12 5.5C12.461 5.5 12.8815 5.3315 13.2 5.0544"
+                            stroke="#2c5530" stroke-width="1" stroke-linecap="round"></path>
+                        <path d="M10 8H10.0081M14 8H14.0081" stroke="#2c5530" stroke-width="1" stroke-linecap="round">
+                        </path>
+                    </svg>
+                    <p class="card-text ms-2">Ginecologia y Obsteticia</p>
                 </div>
-                <div class="card_face card_back">
-                    <h4>Formación academica</h4>
-                    <ul>
-                        <li>Médico, Universidad Nacional de Entre Ríos (UNER)</li>
-                        <li>Residencia en Traumatología y Ortopedia, Hospital Italiano de Buenos Aires</li>
-                        <li>Subespecialista en Cirugía de Columna, Hospital Privado Universitario de Córdoba</li>
-                    </ul>
-                </div>
+                <a href="#" class="btn btn_turno w-100 mt-3">Agendar un turno</a>
             </div>
-        </article>
+        </div>
 
-        <article>
-            <div class="card">
-                <div class="card_face card_front">
-                    <div class="card_img">
-                        <img src="../css/img/medicos/maria.png" alt="">
-                    </div>
-                    <div class="card_especialidad">
-                        <h3>Dra. Maria Pilar Valverde</h3>
-                        <div>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
-                                color="#2c5530" fill="none">
-                                <path
-                                    d="M5.44572 2.99906C5.12985 5.87904 3.57993 7.06862 4.93752 9.6052C5.02451 9.76774 5.06801 9.84901 5.08406 9.88583C5.26967 10.3116 5.19094 10.6954 4.8527 11.0137C4.82345 11.0412 4.77395 11.0808 4.67498 11.16C4.50514 11.2959 4.42021 11.3638 4.34268 11.4327C3.54255 12.1439 3.06086 13.1461 3.00538 14.2152C3 14.3188 3 14.4275 3 14.645V18.5C3 19.9045 3 20.6067 3.33706 21.1111C3.48298 21.3295 3.67048 21.517 3.88886 21.6629C4.39331 22 5.09554 22 6.5 22C7.90446 22 8.60669 22 9.11114 21.6629C9.32952 21.517 9.51702 21.3295 9.66294 21.1111C10 20.6067 10 19.9045 10 18.5V14.645C10 14.4275 10 14.3188 9.99462 14.2152C9.93913 13.1461 9.45745 12.1439 8.65732 11.4327C8.57978 11.3638 8.49486 11.2959 8.32502 11.16C8.22604 11.0808 8.17655 11.0412 8.1473 11.0137C7.80905 10.6954 7.73032 10.3116 7.91593 9.88584C7.93198 9.84902 7.97548 9.76774 8.06248 9.60519C9.42003 7.06859 7.86981 5.87902 7.55369 2.99897C7.49343 2.44999 7.05198 2 6.49971 2C5.9474 2 5.50594 2.45004 5.44572 2.99906Z"
-                                    stroke="#2c5530" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
-                                </path>
-                                <path d="M10 16H3" stroke="#2c5530" stroke-width="1" stroke-linecap="round"
-                                    stroke-linejoin="round"></path>
-                                <path
-                                    d="M16.4457 2.99906C16.1298 5.87904 14.5799 7.06862 15.9375 9.6052C16.0245 9.76774 16.068 9.84901 16.0841 9.88583C16.2697 10.3116 16.1909 10.6954 15.8527 11.0137C15.8234 11.0412 15.774 11.0808 15.675 11.16C15.5051 11.2959 15.4202 11.3638 15.3427 11.4327C14.5425 12.1439 14.0609 13.1461 14.0054 14.2152C14 14.3188 14 14.4275 14 14.645V18.5C14 19.9045 14 20.6067 14.3371 21.1111C14.483 21.3295 14.6705 21.517 14.8889 21.6629C15.3933 22 16.0955 22 17.5 22C18.9045 22 19.6067 22 20.1111 21.6629C20.3295 21.517 20.517 21.3295 20.6629 21.1111C21 20.6067 21 19.9045 21 18.5V14.645C21 14.4275 21 14.3188 20.9946 14.2152C20.9391 13.1461 20.4574 12.1439 19.6573 11.4327C19.5798 11.3638 19.4949 11.2959 19.325 11.16C19.226 11.0808 19.1765 11.0412 19.1473 11.0137C18.8091 10.6954 18.7303 10.3116 18.9159 9.88584C18.932 9.84902 18.9755 9.76774 19.0625 9.60519C20.42 7.06859 18.8698 5.87902 18.5537 2.99897C18.4934 2.44999 18.052 2 17.4997 2C16.9474 2 16.5059 2.45004 16.4457 2.99906Z"
-                                    stroke="#2c5530" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
-                                </path>
-                                <path d="M21 16H14" stroke="#2c5530" stroke-width="1" stroke-linecap="round"
-                                    stroke-linejoin="round"></path>
-                            </svg>
-                            <p>Dermatología</p>
-                        </div>
-                    </div>
+        <div class="card m-2" style="width: 18rem;">
+            <img src="../css/img/medicos/antonio.png" class="card-img-top" alt="...">
+            <div class="card-body d-flex flex-column align-items-center">
+                <h5 class="card-title">Dr. Antonio Javier Gonzalez</h5>
+                <div class="d-flex align-items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="none">
+                        <path
+                            d="M17.3997 5.83806C17.8288 5.40901 18.3665 5.15489 18.9243 5.07568M18.9243 5.07568C19.7347 4.96061 20.5874 5.21474 21.2107 5.83806C22.2631 6.89044 22.2631 8.59667 21.2107 9.64905C20.3628 10.497 19.0904 10.6617 18.0775 10.1432C17.6635 9.93132 17.1331 9.91564 16.8043 10.2445L10.2445 16.8043C9.91564 17.1331 9.93132 17.6635 10.1432 18.0775C10.6617 19.0904 10.497 20.3628 9.64904 21.2107C8.59667 22.2631 6.89044 22.2631 5.83806 21.2107C5.21474 20.5874 4.96061 19.7347 5.07568 18.9243M18.9243 5.07568C19.0394 4.26531 18.7853 3.41261 18.1619 2.78928C17.1096 1.73691 15.4033 1.73691 14.351 2.78928C13.503 3.6372 13.3383 4.90961 13.8568 5.92247C14.0687 6.33646 14.0844 6.86686 13.7555 7.19572L7.19572 13.7555C6.86686 14.0844 6.33646 14.0687 5.92247 13.8568C4.90961 13.3383 3.6372 13.503 2.78928 14.351C1.73691 15.4033 1.73691 17.1096 2.78928 18.1619C3.4126 18.7853 4.26532 19.0394 5.07568 18.9243M6.60026 18.1619C6.17121 18.591 5.63348 18.8451 5.07568 18.9243"
+                            stroke="#2c5530" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+                        </path>
+                    </svg>
+                    <p class="card-text ms-2">Traumatología y Ortopedia</p>
                 </div>
-                <div class="card_face card_back">
-                    <h4>Formación academica</h4>
-                    <ul>
-                        <li>Médica, Universidad de Buenos Aires (UBA)</li>
-                        <li>Residencia en Dermatología, Hospital Británico, Buenos Aires. Posgrado en Dermatología
-                            Estética
-                            y Cosmética, Universidad de Córdoba (UNC)</li>
-                    </ul>
-                </div>
+                <a href="#" class="btn btn_turno w-100 mt-3">Agendar un turno</a>
             </div>
-        </article>
+        </div>
 
-        <article>
-            <div class="card">
-                <div class="card_face card_front">
-                    <div class="card_img">
-                        <img src="../css/img/medicos/lucas.png" alt="">
-                    </div>
-                    <div class="card_especialidad">
-                        <h3>Dr. Lucas Fernando Rojas</h3>
-                        <div>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
-                                color="#2c5530" fill="none">
-                                <path
-                                    d="M3.5 11C2.67157 11 2 10.3284 2 9.5C2 8.67157 2.67157 8 3.5 8H4.25203C5.14012 4.54955 8.27232 2 12 2C15.7277 2 18.8599 4.54955 19.748 8H20C20.8284 8 21.5 8.67157 21.5 9.5C21.5 10.3284 20.8284 11 20 11H19.9381C19.446 14.9463 16.0796 18 12 18C7.92038 18 4.55399 14.9463 4.06189 11H3.5Z"
-                                    stroke="#2c5530" stroke-width="1" stroke-linejoin="round"></path>
-                                <path d="M4.5 8H6C9.31371 8 12 5.31371 12 2" stroke="#2c5530" stroke-width="1"
-                                    stroke-linecap="round" stroke-linejoin="round"></path>
-                                <path d="M19.5 8H18C14.6863 8 12 5.31371 12 2" stroke="#2c5530" stroke-width="1"
-                                    stroke-linecap="round" stroke-linejoin="round"></path>
-                                <path d="M12 15C12.5523 15 13 14.5523 13 14H11C11 14.5523 11.4477 15 12 15Z"
-                                    stroke="#2c5530" stroke-width="1" stroke-linejoin="round"></path>
-                                <path
-                                    d="M18 22C18 20.208 17.2144 18.5994 15.9687 17.5M6 22C6 20.208 6.78563 18.5994 8.03126 17.5"
-                                    stroke="#2c5530" stroke-width="1" stroke-linecap="round"></path>
-                                <path d="M9 10V10.01" stroke="#2c5530" stroke-width="1" stroke-linecap="round"></path>
-                                <path d="M15 10V10.01" stroke="#2c5530" stroke-width="1" stroke-linecap="round"></path>
-                            </svg>
-                            <p>Pediatría</p>
-                        </div>
-                    </div>
+        <div class="card m-2" style="width: 18rem;">
+            <img src="../css/img/medicos/maria.png" class="card-img-top" alt="...">
+            <div class="card-body d-flex flex-column align-items-center">
+                <h5 class="card-title">Dra. Maria Pilar Valverde</h5>
+                <div class="d-flex align-items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="none">
+                        <path
+                            d="M5.44572 2.99906C5.12985 5.87904 3.57993 7.06862 4.93752 9.6052C5.02451 9.76774 5.06801 9.84901 5.08406 9.88583C5.26967 10.3116 5.19094 10.6954 4.8527 11.0137C4.82345 11.0412 4.77395 11.0808 4.67498 11.16C4.50514 11.2959 4.42021 11.3638 4.34268 11.4327C3.54255 12.1439 3.06086 13.1461 3.00538 14.2152C3 14.3188 3 14.4275 3 14.645V18.5C3 19.9045 3 20.6067 3.33706 21.1111C3.48298 21.3295 3.67048 21.517 3.88886 21.6629C4.39331 22 5.09554 22 6.5 22C7.90446 22 8.60669 22 9.11114 21.6629C9.32952 21.517 9.51702 21.3295 9.66294 21.1111C10 20.6067 10 19.9045 10 18.5V14.645C10 14.4275 10 14.3188 9.99462 14.2152C9.93913 13.1461 9.45745 12.1439 8.65732 11.4327C8.57978 11.3638 8.49486 11.2959 8.32502 11.16C8.22604 11.0808 8.17655 11.0412 8.1473 11.0137C7.80905 10.6954 7.73032 10.3116 7.91593 9.88584C7.93198 9.84902 7.97548 9.76774 8.06248 9.60519C9.42003 7.06859 7.86981 5.87902 7.55369 2.99897C7.49343 2.44999 7.05198 2 6.49971 2C5.9474 2 5.50594 2.45004 5.44572 2.99906Z"
+                            stroke="#2c5530" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+                        </path>
+                        <path d="M10 16H3" stroke="#2c5530" stroke-width="1" stroke-linecap="round"
+                            stroke-linejoin="round"></path>
+                        <path
+                            d="M16.4457 2.99906C16.1298 5.87904 14.5799 7.06862 15.9375 9.6052C16.0245 9.76774 16.068 9.84901 16.0841 9.88583C16.2697 10.3116 16.1909 10.6954 15.8527 11.0137C15.8234 11.0412 15.774 11.0808 15.675 11.16C15.5051 11.2959 15.4202 11.3638 15.3427 11.4327C14.5425 12.1439 14.0609 13.1461 14.0054 14.2152C14 14.3188 14 14.4275 14 14.645V18.5C14 19.9045 14 20.6067 14.3371 21.1111C14.483 21.3295 14.6705 21.517 14.8889 21.6629C15.3933 22 16.0955 22 17.5 22C18.9045 22 19.6067 22 20.1111 21.6629C20.3295 21.517 20.517 21.3295 20.6629 21.1111C21 20.6067 21 19.9045 21 18.5V14.645C21 14.4275 21 14.3188 20.9946 14.2152C20.9391 13.1461 20.4574 12.1439 19.6573 11.4327C19.5798 11.3638 19.4949 11.2959 19.325 11.16C19.226 11.0808 19.1765 11.0412 19.1473 11.0137C18.8091 10.6954 18.7303 10.3116 18.9159 9.88584C18.932 9.84902 18.9755 9.76774 19.0625 9.60519C20.42 7.06859 18.8698 5.87902 18.5537 2.99897C18.4934 2.44999 18.052 2 17.4997 2C16.9474 2 16.5059 2.45004 16.4457 2.99906Z"
+                            stroke="#2c5530" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+                        </path>
+                        <path d="M21 16H14" stroke="#2c5530" stroke-width="1" stroke-linecap="round"
+                            stroke-linejoin="round"></path>
+                    </svg>
+                    <p class="card-text ms-2">Dermatología</p>
                 </div>
-                <div class="card_face card_back">
-                    <h4>Formación academica</h4>
-                    <ul>
-                        <li>Médico, Universidad Nacional de La Plata (UNLP)</li>
-                        <li>Residencia en Pediatría, Hospital de Niños Ricardo Gutiérrez, Buenos Aires</li>
-                        <li>Subespecialidad en Neonatología, Hospital San Roque, Paraná, Entre Ríos</li>
-                    </ul>
-                </div>
+                <a href="#" class="btn btn_turno w-100 mt-3">Agendar un turno</a>
             </div>
-        </article>
+        </div>
 
-        <article>
-            <div class="card">
-                <div class="card_face card_front">
-                    <div class="card_img">
-                        <img src="../css/img/medicos/paula.png" alt="">
-                    </div>
-                    <div class="card_especialidad">
-                        <h3>Dra. Paula Duarte</h3>
-                        <div>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
-                                color="#2c5530" fill="none">
-                                <path
-                                    d="M17 2C17 2.50986 17 2.76479 17.0677 3.00236C17.1049 3.13286 17.157 3.25864 17.223 3.37723C17.3431 3.59309 17.5234 3.77336 17.8839 4.13388L19.8661 6.11612C20.2266 6.47664 20.4069 6.65691 20.6228 6.77701C20.7414 6.84298 20.8671 6.89509 20.9976 6.93228C21.2352 7 21.4901 7 22 7"
-                                    stroke="#2c5530" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
-                                </path>
-                                <path
-                                    d="M11.6931 7L6.76525 11.9278C5.70048 12.9926 5.1681 13.525 5.0412 14.163C4.98627 14.4391 4.98627 14.7234 5.0412 14.9996C5.1681 15.6376 5.70049 16.17 6.76525 17.2348C7.83001 18.2995 8.3624 18.8319 9.00037 18.9588C9.27655 19.0137 9.56085 19.0137 9.83704 18.9588C10.475 18.8319 11.0074 18.2995 12.0722 17.2348L17 12.3069"
-                                    stroke="#2c5530" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
-                                </path>
-                                <path d="M11 6L18 13" stroke="#2c5530" stroke-width="1" stroke-linecap="round"
-                                    stroke-linejoin="round"></path>
-                                <path
-                                    d="M8 18.6372L6.83054 19.4725C6.35987 19.8087 6.12454 19.9768 5.86646 19.9971C5.76637 20.005 5.66567 19.9967 5.56824 19.9724C5.31702 19.91 5.11252 19.7055 4.70352 19.2965C4.29453 18.8875 4.09003 18.683 4.02756 18.4318C4.00333 18.3343 3.995 18.2336 4.00288 18.1335C4.0232 17.8755 4.1913 17.6401 4.52749 17.1695L5.36282 16"
-                                    stroke="#2c5530" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
-                                </path>
-                                <path d="M13.5 8L18.5 4M16 10.5L20 5.5" stroke="#2c5530" stroke-width="1"
-                                    stroke-linejoin="round"></path>
-                                <path d="M4.5 19.5L2 22" stroke="#2c5530" stroke-width="1" stroke-linecap="round"
-                                    stroke-linejoin="round"></path>
-                            </svg>
-                            <p>Clínica Médica</p>
-                        </div>
-                    </div>
+        <div class="card m-2" style="width: 18rem;">
+            <img src="../css/img/medicos/lucas.png" class="card-img-top" alt="...">
+            <div class="card-body d-flex flex-column align-items-center">
+                <h5 class="card-title">Dr. Lucas Fernando Rojas</h5>
+                <div class="d-flex align-items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="none">
+                        <path
+                            d="M3.5 11C2.67157 11 2 10.3284 2 9.5C2 8.67157 2.67157 8 3.5 8H4.25203C5.14012 4.54955 8.27232 2 12 2C15.7277 2 18.8599 4.54955 19.748 8H20C20.8284 8 21.5 8.67157 21.5 9.5C21.5 10.3284 20.8284 11 20 11H19.9381C19.446 14.9463 16.0796 18 12 18C7.92038 18 4.55399 14.9463 4.06189 11H3.5Z"
+                            stroke="#2c5530" stroke-width="1" stroke-linejoin="round"></path>
+                        <path d="M4.5 8H6C9.31371 8 12 5.31371 12 2" stroke="#2c5530" stroke-width="1"
+                            stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M19.5 8H18C14.6863 8 12 5.31371 12 2" stroke="#2c5530" stroke-width="1"
+                            stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M12 15C12.5523 15 13 14.5523 13 14H11C11 14.5523 11.4477 15 12 15Z" stroke="#2c5530"
+                            stroke-width="1" stroke-linejoin="round"></path>
+                        <path
+                            d="M18 22C18 20.208 17.2144 18.5994 15.9687 17.5M6 22C6 20.208 6.78563 18.5994 8.03126 17.5"
+                            stroke="#2c5530" stroke-width="1" stroke-linecap="round"></path>
+                        <path d="M9 10V10.01" stroke="#2c5530" stroke-width="1" stroke-linecap="round"></path>
+                        <path d="M15 10V10.01" stroke="#2c5530" stroke-width="1" stroke-linecap="round"></path>
+                    </svg>
+                    <p class="card-text ms-2">Pediatría</p>
                 </div>
-                <div class="card_face card_back">
-                    <h4>Formación academica</h4>
-                    <ul>
-                        <li>Médica, Universidad Nacional de Entre Ríos (UNER)</li>
-                        <li>Residencia en Clínica Médica en el Hospital San Martín de Paraná</li>
-                    </ul>
-                </div>
+                <a href="#" class="btn btn_turno w-100 mt-3">Agendar un turno</a>
             </div>
-        </article>
+        </div>
 
-        <article>
-            <div class="card">
-                <div class="card_face card_front">
-                    <div class="card_img">
-                        <img src="../css/img/medicos/andres.png" alt="">
-                    </div>
-                    <div class="card_especialidad">
-                        <h3>Dr. Andrés Medina</h3>
-                        <div>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
-                                color="#2c5530" fill="none">
-                                <path d="M2 8C2 8 6.47715 3 12 3C17.5228 3 22 8 22 8" stroke="#2c5530" stroke-width="1"
-                                    stroke-linecap="round"></path>
-                                <path
-                                    d="M21.544 13.045C21.848 13.4713 22 13.6845 22 14C22 14.3155 21.848 14.5287 21.544 14.955C20.1779 16.8706 16.6892 21 12 21C7.31078 21 3.8221 16.8706 2.45604 14.955C2.15201 14.5287 2 14.3155 2 14C2 13.6845 2.15201 13.4713 2.45604 13.045C3.8221 11.1294 7.31078 7 12 7C16.6892 7 20.1779 11.1294 21.544 13.045Z"
-                                    stroke="#2c5530" stroke-width="1.5"></path>
-                                <path
-                                    d="M15 14C15 12.3431 13.6569 11 12 11C10.3431 11 9 12.3431 9 14C9 15.6569 10.3431 17 12 17C13.6569 17 15 15.6569 15 14Z"
-                                    stroke="#2c5530" stroke-width="1.5"></path>
-                            </svg>
-                            <p>Oftamología</p>
-                        </div>
-                    </div>
+        <div class="card m-2" style="width: 18rem;">
+            <img src="../css/img/medicos/paula.png" class="card-img-top" alt="...">
+            <div class="card-body d-flex flex-column align-items-center">
+                <h5 class="card-title">Dra. Paula Duarte</h5>
+                <div class="d-flex align-items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="none">
+                        <path
+                            d="M17 2C17 2.50986 17 2.76479 17.0677 3.00236C17.1049 3.13286 17.157 3.25864 17.223 3.37723C17.3431 3.59309 17.5234 3.77336 17.8839 4.13388L19.8661 6.11612C20.2266 6.47664 20.4069 6.65691 20.6228 6.77701C20.7414 6.84298 20.8671 6.89509 20.9976 6.93228C21.2352 7 21.4901 7 22 7"
+                            stroke="#2c5530" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+                        </path>
+                        <path
+                            d="M11.6931 7L6.76525 11.9278C5.70048 12.9926 5.1681 13.525 5.0412 14.163C4.98627 14.4391 4.98627 14.7234 5.0412 14.9996C5.1681 15.6376 5.70049 16.17 6.76525 17.2348C7.83001 18.2995 8.3624 18.8319 9.00037 18.9588C9.27655 19.0137 9.56085 19.0137 9.83704 18.9588C10.475 18.8319 11.0074 18.2995 12.0722 17.2348L17 12.3069"
+                            stroke="#2c5530" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+                        </path>
+                        <path d="M11 6L18 13" stroke="#2c5530" stroke-width="1" stroke-linecap="round"
+                            stroke-linejoin="round"></path>
+                        <path
+                            d="M8 18.6372L6.83054 19.4725C6.35987 19.8087 6.12454 19.9768 5.86646 19.9971C5.76637 20.005 5.66567 19.9967 5.56824 19.9724C5.31702 19.91 5.11252 19.7055 4.70352 19.2965C4.29453 18.8875 4.09003 18.683 4.02756 18.4318C4.00333 18.3343 3.995 18.2336 4.00288 18.1335C4.0232 17.8755 4.1913 17.6401 4.52749 17.1695L5.36282 16"
+                            stroke="#2c5530" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+                        </path>
+                        <path d="M13.5 8L18.5 4M16 10.5L20 5.5" stroke="#2c5530" stroke-width="1"
+                            stroke-linejoin="round"></path>
+                        <path d="M4.5 19.5L2 22" stroke="#2c5530" stroke-width="1" stroke-linecap="round"
+                            stroke-linejoin="round"></path>
+                    </svg>
+                    <p class="card-text ms-2">Clínica Médica</p>
                 </div>
-                <div class="card_face card_back">
-                    <h4>Formación academica</h4>
-                    <ul>
-                        <li>Médico, Universidad de Buenos Aires (UBA)</li>
-                        <li>Especialización en Oftalmología en el Hospital Santa Lucía (CABA)</li>
-                    </ul>
-                </div>
+                <a href="#" class="btn btn_turno w-100 mt-3">Agendar un turno</a>
             </div>
-        </article>
+        </div>
 
-        <article>
-            <div class="card">
-                <div class="card_face card_front">
-                    <div class="card_img">
-                        <img src="../css/img/medicos/tomas.png" alt="">
-                    </div>
-                    <div class="card_especialidad">
-                        <h3>Dr. Tomás Herrera</h3>
-                        <div>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
-                                color="#2c5530" fill="none">
-                                <path d="M15 8.5C13.3431 8.5 12 7.15685 12 5.5" stroke="#2c5530" stroke-width="1"
-                                    stroke-linecap="round" stroke-linejoin="round"></path>
-                                <path d="M12 5V19.5" stroke="#2c5530" stroke-width="1" stroke-linecap="round"
-                                    stroke-linejoin="round"></path>
-                                <path d="M20 16.5C20 14.8431 18.6569 13.5 17 13.5" stroke="#2c5530" stroke-width="1"
-                                    stroke-linecap="round" stroke-linejoin="round"></path>
-                                <path d="M4 16.5C4 14.8431 5.34315 13.5 7 13.5" stroke="#2c5530" stroke-width="1"
-                                    stroke-linecap="round" stroke-linejoin="round"></path>
-                                <path
-                                    d="M16 19.5C16 20.6046 15.1046 21.5 14 21.5C12.8954 21.5 12 20.6046 12 19.5C12 20.6046 11.1046 21.5 10 21.5C8.89543 21.5 8 20.6046 8 19.5C8 19.4404 8.00466 19.3815 8.00977 19.3232C7.694 19.4362 7.35459 19.5 7 19.5C5.34315 19.5 4 18.1569 4 16.5C4 15.9246 4.16545 15.3892 4.44629 14.9326C3.28052 14.2336 2.5 12.9582 2.5 11.5C2.5 10.5452 2.8353 9.66916 3.39355 8.98145C3.14445 8.54412 3 8.03929 3 7.5C3 5.84315 4.34315 4.5 6 4.5C6.35951 4.5 6.70301 4.56666 7.02246 4.68262C7.17854 3.45191 8.22691 2.5 9.5 2.5C10.8807 2.5 12 3.61929 12 5C12 3.61929 13.1193 2.5 14.5 2.5C15.7731 2.5 16.8215 3.45191 16.9775 4.68262C17.297 4.56666 17.6405 4.5 18 4.5C19.6569 4.5 21 5.84315 21 7.5C21 8.03929 20.8555 8.54412 20.6064 8.98145C21.1647 9.66916 21.5 10.5452 21.5 11.5C21.5 12.9582 20.7195 14.2336 19.5537 14.9326C19.8346 15.3892 20 15.9246 20 16.5C20 18.1569 18.6569 19.5 17 19.5C16.6454 19.5 16.306 19.4362 15.9902 19.3232C15.9953 19.3815 16 19.4404 16 19.5Z"
-                                    stroke="#2c5530" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
-                                </path>
-                            </svg>
-                            <p>Neurología</p>
-                        </div>
-                    </div>
+        <div class="card m-2" style="width: 18rem;">
+            <img src="../css/img/medicos/andres.png" class="card-img-top" alt="...">
+            <div class="card-body d-flex flex-column align-items-center">
+                <h5 class="card-title">Dr. Andrés Medina</h5>
+                <div class="d-flex align-items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="none">
+                        <path d="M2 8C2 8 6.47715 3 12 3C17.5228 3 22 8 22 8" stroke="#2c5530" stroke-width="1"
+                            stroke-linecap="round"></path>
+                        <path
+                            d="M21.544 13.045C21.848 13.4713 22 13.6845 22 14C22 14.3155 21.848 14.5287 21.544 14.955C20.1779 16.8706 16.6892 21 12 21C7.31078 21 3.8221 16.8706 2.45604 14.955C2.15201 14.5287 2 14.3155 2 14C2 13.6845 2.15201 13.4713 2.45604 13.045C3.8221 11.1294 7.31078 7 12 7C16.6892 7 20.1779 11.1294 21.544 13.045Z"
+                            stroke="#2c5530" stroke-width="1.5"></path>
+                        <path
+                            d="M15 14C15 12.3431 13.6569 11 12 11C10.3431 11 9 12.3431 9 14C9 15.6569 10.3431 17 12 17C13.6569 17 15 15.6569 15 14Z"
+                            stroke="#2c5530" stroke-width="1.5"></path>
+                    </svg>
+                    <p class="card-text ms-2">Oftamología</p>
                 </div>
-                <div class="card_face card_back">
-                    <h4>Formación academica</h4>
-                    <ul>
-                        <li>Médico, Universidad Nacional de Rosario (UNR)</li>
-                        <li>Residencia y especialización en Neurología en el Hospital Italiano de Rosario</li>
-                    </ul>
-                </div>
+                <a href="#" class="btn btn_turno w-100 mt-3">Agendar un turno</a>
             </div>
-        </article>
+        </div>
 
-        <article>
-            <div class="card">
-                <div class="card_face card_front">
-                    <div class="card_img">
-                        <img src="../css/img/medicos/lucia.png" alt="">
-                    </div>
-                    <div class="card_especialidad">
-                        <h3>Dra. Lucía Fernández</h3>
-                        <div>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
-                                color="#2c5530" fill="none">
-                                <path d="M7.5 12H13.5M7.5 8H10.5" stroke="#2c5530" stroke-width="1"
-                                    stroke-linecap="round" stroke-linejoin="round"></path>
-                                <path
-                                    d="M8.5 20C9.55038 20.8697 10.8145 21.4238 12.2635 21.5188C13.4052 21.5937 14.5971 21.5936 15.7365 21.5188C16.1288 21.4931 16.5565 21.4007 16.9248 21.251C17.3345 21.0845 17.5395 21.0012 17.6437 21.0138C17.7478 21.0264 17.8989 21.1364 18.2011 21.3563C18.7339 21.744 19.4051 22.0225 20.4005 21.9986C20.9038 21.9865 21.1555 21.9804 21.2681 21.7909C21.3808 21.6013 21.2405 21.3389 20.9598 20.8141C20.5706 20.0862 20.324 19.2529 20.6977 18.5852C21.3413 17.6315 21.8879 16.5021 21.9678 15.2823C22.0107 14.6269 22.0107 13.9481 21.9678 13.2927C21.9146 12.4799 21.7173 11.7073 21.4012 11"
-                                    stroke="#2c5530" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
-                                </path>
-                                <path
-                                    d="M12.345 17.4868C15.9006 17.2526 18.7328 14.4069 18.9658 10.8344C19.0114 10.1353 19.0114 9.41131 18.9658 8.71219C18.7328 5.13969 15.9006 2.29401 12.345 2.05985C11.132 1.97997 9.86553 1.98013 8.65499 2.05985C5.09943 2.29401 2.26725 5.13969 2.0342 8.71219C1.9886 9.41131 1.9886 10.1353 2.0342 10.8344C2.11908 12.1356 2.69992 13.3403 3.38372 14.3576C3.78076 15.0697 3.51873 15.9586 3.10518 16.735C2.807 17.2948 2.65791 17.5747 2.77762 17.7769C2.89732 17.9791 3.16472 17.9856 3.69951 17.9985C4.75712 18.024 5.47028 17.7269 6.03638 17.3134C6.35744 17.0788 6.51798 16.9615 6.62862 16.9481C6.73926 16.9346 6.957 17.0234 7.39241 17.2011C7.78374 17.3608 8.23812 17.4593 8.65499 17.4868C9.86553 17.5665 11.132 17.5666 12.345 17.4868Z"
-                                    stroke="#2c5530" stroke-width="1" stroke-linejoin="round"></path>
-                            </svg>
-                            <p>Psiquiatría</p>
-                        </div>
-                    </div>
+        <div class="card m-2" style="width: 18rem;">
+            <img src="../css/img/medicos/tomas.png" class="card-img-top" alt="...">
+            <div class="card-body d-flex flex-column align-items-center">
+                <h5 class="card-title">Dr. Tomás Herrera</h5>
+                <div class="d-flex align-items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="none">
+                        <path d="M15 8.5C13.3431 8.5 12 7.15685 12 5.5" stroke="#2c5530" stroke-width="1"
+                            stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M12 5V19.5" stroke="#2c5530" stroke-width="1" stroke-linecap="round"
+                            stroke-linejoin="round"></path>
+                        <path d="M20 16.5C20 14.8431 18.6569 13.5 17 13.5" stroke="#2c5530" stroke-width="1"
+                            stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M4 16.5C4 14.8431 5.34315 13.5 7 13.5" stroke="#2c5530" stroke-width="1"
+                            stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path
+                            d="M16 19.5C16 20.6046 15.1046 21.5 14 21.5C12.8954 21.5 12 20.6046 12 19.5C12 20.6046 11.1046 21.5 10 21.5C8.89543 21.5 8 20.6046 8 19.5C8 19.4404 8.00466 19.3815 8.00977 19.3232C7.694 19.4362 7.35459 19.5 7 19.5C5.34315 19.5 4 18.1569 4 16.5C4 15.9246 4.16545 15.3892 4.44629 14.9326C3.28052 14.2336 2.5 12.9582 2.5 11.5C2.5 10.5452 2.8353 9.66916 3.39355 8.98145C3.14445 8.54412 3 8.03929 3 7.5C3 5.84315 4.34315 4.5 6 4.5C6.35951 4.5 6.70301 4.56666 7.02246 4.68262C7.17854 3.45191 8.22691 2.5 9.5 2.5C10.8807 2.5 12 3.61929 12 5C12 3.61929 13.1193 2.5 14.5 2.5C15.7731 2.5 16.8215 3.45191 16.9775 4.68262C17.297 4.56666 17.6405 4.5 18 4.5C19.6569 4.5 21 5.84315 21 7.5C21 8.03929 20.8555 8.54412 20.6064 8.98145C21.1647 9.66916 21.5 10.5452 21.5 11.5C21.5 12.9582 20.7195 14.2336 19.5537 14.9326C19.8346 15.3892 20 15.9246 20 16.5C20 18.1569 18.6569 19.5 17 19.5C16.6454 19.5 16.306 19.4362 15.9902 19.3232C15.9953 19.3815 16 19.4404 16 19.5Z"
+                            stroke="#2c5530" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+                        </path>
+                    </svg>
+                    <p class="card-text ms-2">Neurología</p>
                 </div>
-                <div class="card_face card_back">
-                    <h4>Formación academica</h4>
-                    <ul>
-                        <li>Médica, Universidad Nacional de Córdoba (UNC)</li>
-                        <li>Residencia en Psiquiatría en el Hospital Neuropsiquiátrico de Córdoba</li>
-                    </ul>
-                </div>
+                <a href="#" class="btn btn_turno w-100 mt-3">Agendar un turno</a>
             </div>
-        </article>
+        </div>
 
-        <article>
-            <div class="card">
-                <div class="card_face card_front">
-                    <div class="card_img">
-                        <img src="../css/img/medicos/martin.png" alt="">
-                    </div>
-                    <div class="card_especialidad">
-                        <h3>Dr. Martín López</h3>
-                        <div>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
-                                color="#2c5530" fill="none">
-                                <path
-                                    d="M8.6671 22C9.20107 21.466 9.73505 20.9321 9.24127 18M8.6671 15.3336C7.33381 10.0004 8.33378 9.00042 8.6671 8.6671C9.00042 8.33378 10.0004 7.33381 15.3336 8.6671M8.6671 15.3336C3.33394 14.0003 2.66664 14.6663 2 15.3329M8.6671 15.3336C14.0003 16.6668 14.9996 15.6662 15.3329 15.3329C15.6662 14.9996 16.6668 14.0003 15.3336 8.6671M22 8.6671C21.3334 9.33375 20.6667 10.0004 15.3336 8.6671M15.3329 2C14.799 2.53394 14.2654 3.06829 14.7592 6"
-                                    stroke="#2c5530" stroke-width="1" stroke-linecap="round"></path>
-                            </svg>
-                            <p>Gastroenterología</p>
-                        </div>
-                    </div>
+        <div class="card m-2" style="width: 18rem;">
+            <img src="../css/img/medicos/lucia.png" class="card-img-top" alt="...">
+            <div class="card-body d-flex flex-column align-items-center">
+                <h5 class="card-title">Dra. Lucía Fernández</h5>
+                <div class="d-flex align-items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="none">
+                        <path d="M7.5 12H13.5M7.5 8H10.5" stroke="#2c5530" stroke-width="1" stroke-linecap="round"
+                            stroke-linejoin="round"></path>
+                        <path
+                            d="M8.5 20C9.55038 20.8697 10.8145 21.4238 12.2635 21.5188C13.4052 21.5937 14.5971 21.5936 15.7365 21.5188C16.1288 21.4931 16.5565 21.4007 16.9248 21.251C17.3345 21.0845 17.5395 21.0012 17.6437 21.0138C17.7478 21.0264 17.8989 21.1364 18.2011 21.3563C18.7339 21.744 19.4051 22.0225 20.4005 21.9986C20.9038 21.9865 21.1555 21.9804 21.2681 21.7909C21.3808 21.6013 21.2405 21.3389 20.9598 20.8141C20.5706 20.0862 20.324 19.2529 20.6977 18.5852C21.3413 17.6315 21.8879 16.5021 21.9678 15.2823C22.0107 14.6269 22.0107 13.9481 21.9678 13.2927C21.9146 12.4799 21.7173 11.7073 21.4012 11"
+                            stroke="#2c5530" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+                        </path>
+                        <path
+                            d="M12.345 17.4868C15.9006 17.2526 18.7328 14.4069 18.9658 10.8344C19.0114 10.1353 19.0114 9.41131 18.9658 8.71219C18.7328 5.13969 15.9006 2.29401 12.345 2.05985C11.132 1.97997 9.86553 1.98013 8.65499 2.05985C5.09943 2.29401 2.26725 5.13969 2.0342 8.71219C1.9886 9.41131 1.9886 10.1353 2.0342 10.8344C2.11908 12.1356 2.69992 13.3403 3.38372 14.3576C3.78076 15.0697 3.51873 15.9586 3.10518 16.735C2.807 17.2948 2.65791 17.5747 2.77762 17.7769C2.89732 17.9791 3.16472 17.9856 3.69951 17.9985C4.75712 18.024 5.47028 17.7269 6.03638 17.3134C6.35744 17.0788 6.51798 16.9615 6.62862 16.9481C6.73926 16.9346 6.957 17.0234 7.39241 17.2011C7.78374 17.3608 8.23812 17.4593 8.65499 17.4868C9.86553 17.5665 11.132 17.5666 12.345 17.4868Z"
+                            stroke="#2c5530" stroke-width="1" stroke-linejoin="round"></path>
+                    </svg>
+                    <p class="card-text ms-2">Psiquiatría</p>
                 </div>
-                <div class="card_face card_back">
-                    <h4>Formación academica</h4>
-                    <ul>
-                        <li>Médico, Universidad Nacional de La Plata (UNLP)</li>
-                        <li>Residencia en Gastroenterología en el Hospital de Gastroenterología Dr. Carlos Bonorino
-                            Udaondo,
-                            Buenos Aires</li>
-                    </ul>
-                </div>
+                <a href="#" class="btn btn_turno w-100 mt-3">Agendar un turno</a>
             </div>
-        </article>
+        </div>
 
-        <article>
-            <div class="card">
-                <div class="card_face card_front">
-                    <div class="card_img">
-                        <img src="../css/img/medicos/sofia.png" alt="">
-                    </div>
-                    <div class="card_especialidad">
-                        <h3>Dra. Sofía Ramírez</h3>
-                        <div>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
-                                color="#2c5530" fill="none">
-                                <path d="M7.5 12H13.5M7.5 8H10.5" stroke="#2c5530" stroke-width="1"
-                                    stroke-linecap="round" stroke-linejoin="round"></path>
-                                <path
-                                    d="M8.5 20C9.55038 20.8697 10.8145 21.4238 12.2635 21.5188C13.4052 21.5937 14.5971 21.5936 15.7365 21.5188C16.1288 21.4931 16.5565 21.4007 16.9248 21.251C17.3345 21.0845 17.5395 21.0012 17.6437 21.0138C17.7478 21.0264 17.8989 21.1364 18.2011 21.3563C18.7339 21.744 19.4051 22.0225 20.4005 21.9986C20.9038 21.9865 21.1555 21.9804 21.2681 21.7909C21.3808 21.6013 21.2405 21.3389 20.9598 20.8141C20.5706 20.0862 20.324 19.2529 20.6977 18.5852C21.3413 17.6315 21.8879 16.5021 21.9678 15.2823C22.0107 14.6269 22.0107 13.9481 21.9678 13.2927C21.9146 12.4799 21.7173 11.7073 21.4012 11"
-                                    stroke="#2c5530" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
-                                </path>
-                                <path
-                                    d="M12.345 17.4868C15.9006 17.2526 18.7328 14.4069 18.9658 10.8344C19.0114 10.1353 19.0114 9.41131 18.9658 8.71219C18.7328 5.13969 15.9006 2.29401 12.345 2.05985C11.132 1.97997 9.86553 1.98013 8.65499 2.05985C5.09943 2.29401 2.26725 5.13969 2.0342 8.71219C1.9886 9.41131 1.9886 10.1353 2.0342 10.8344C2.11908 12.1356 2.69992 13.3403 3.38372 14.3576C3.78076 15.0697 3.51873 15.9586 3.10518 16.735C2.807 17.2948 2.65791 17.5747 2.77762 17.7769C2.89732 17.9791 3.16472 17.9856 3.69951 17.9985C4.75712 18.024 5.47028 17.7269 6.03638 17.3134C6.35744 17.0788 6.51798 16.9615 6.62862 16.9481C6.73926 16.9346 6.957 17.0234 7.39241 17.2011C7.78374 17.3608 8.23812 17.4593 8.65499 17.4868C9.86553 17.5665 11.132 17.5666 12.345 17.4868Z"
-                                    stroke="#2c5530" stroke-width="1" stroke-linejoin="round"></path>
-                            </svg>
-                            <p>Endocrinología</p>
-                        </div>
-                    </div>
+        <div class="card m-2" style="width: 18rem;">
+            <img src="../css/img/medicos/martin.png" class="card-img-top" alt="...">
+            <div class="card-body d-flex flex-column align-items-center">
+                <h5 class="card-title">Dr. Martín López</h5>
+                <div class="d-flex align-items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="none">
+                        <path
+                            d="M9.48457 2C9.72845 3.49019 10.4411 4.57432 12.475 3.87202C16.6773 2.42099 19.9986 6.8491 19.9986 10.8C19.9986 14.7765 17.353 18 14.0895 18H13.0247C10.492 18 8.27593 19.6321 7.45312 22"
+                            stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+                        </path>
+                        <path
+                            d="M6.0058 2V2.77557C6.0058 6.57844 11.4279 9.38737 9.63736 13.1999C8.92581 14.715 4.89483 17.2931 4 22"
+                            stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+                        </path>
+                        <path d="M14 7C14.9576 7.29708 15.711 8.04937 16 9" stroke="currentColor" stroke-width="1"
+                            stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                    <p class="card-text ms-2">Gastroenterología</p>
                 </div>
-                <div class="card_face card_back">
-                    <h4>Formación academica</h4>
-                    <ul>
-                        <li>Médica, Universidad Nacional de Córdoba (UNC)</li>
-                        <li>Residencia en Endocrinología en el Hospital Privado Universitario de Córdoba</li>
-                    </ul>
-                </div>
+                <a href="#" class="btn btn_turno w-100 mt-3">Agendar un turno</a>
             </div>
-        </article>
+        </div>
+
+        <div class="card m-2" style="width: 18rem;">
+            <img src="../css/img/medicos/sofia.png" class="card-img-top" alt="...">
+            <div class="card-body d-flex flex-column align-items-center">
+                <h5 class="card-title">Dra. Sofía Ramírez</h5>
+                <div class="d-flex align-items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="none">
+                        <path
+                            d="M9.06845 2H14.9316C15.8529 2 16.3135 2 16.5997 2.29289C17.1334 2.83907 17.1334 5.16093 16.5997 5.70711C16.3135 6 15.8529 6 14.9316 6H9.06845C8.14715 6 7.6865 6 7.40029 5.70711C6.86657 5.16093 6.86657 2.83907 7.40029 2.29289C7.6865 2 8.14715 2 9.06845 2Z"
+                            stroke="#141B34" stroke-width="1" />
+                        <path
+                            d="M8 6C8.16493 6.32986 8.24741 6.49481 8.30606 6.6557C8.61211 7.49515 8.52805 8.42732 8.07678 9.19848C7.99029 9.34628 7.87965 9.49381 7.65836 9.78885L7.25493 10.3268C6.80486 10.9269 6.57983 11.2269 6.41674 11.5556C6.252 11.8877 6.13421 12.241 6.06677 12.6055C6 12.9664 6 13.3414 6 14.0915V16C6 18.8284 6 20.2426 6.87868 21.1213C7.75736 22 9.17157 22 12 22C14.8284 22 16.2426 22 17.1213 21.1213C18 20.2426 18 18.8284 18 16V14.0915C18 13.3414 18 12.9664 17.9332 12.6055C17.8658 12.241 17.748 11.8877 17.5833 11.5556C17.4202 11.2269 17.1951 10.9269 16.7451 10.3268L16.3416 9.78885C16.1204 9.49381 16.0097 9.34628 15.9232 9.19848C15.4719 8.42732 15.3879 7.49515 15.6939 6.6557C15.7526 6.49481 15.8351 6.32987 16 6"
+                            stroke="#141B34" stroke-width="1" />
+                        <path d="M12 13V18M9.5 15.5L14.5 15.5" stroke="#141B34" stroke-width="1"
+                            stroke-linecap="round" />
+                    </svg>
+                    <p class="card-text ms-2">Endocrinología</p>
+                </div>
+                <a href="#" class="btn btn_turno w-100 mt-3">Agendar un turno</a>
+            </div>
+        </div>
     </section>
 
     <footer class="footer">
-        <div class="container">">
+        <div class="container">
             <div class="footer-bottom">
                 <p>&copy; 2025 UNER: IDW (2025) Grupo 45. Todos los derechos reservados.</p>
             </div>
         </div>
     </footer>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

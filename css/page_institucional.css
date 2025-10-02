@@ -61,68 +61,9 @@ main {
   flex-wrap: wrap;
   justify-content: center;
   margin-bottom: 50px;
-
-  /* cards */
-  & article {
-    width: 280px;
-    height: 350px;
-    perspective: 1000px;
-    margin: 20px;
-
-    & .card {
-      width: 100%;
-      height: 100%;
-      transform-style: preserve-3d;
-      transition: transform 0.5s linear;
-
-      & .card_face {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        backface-visibility: hidden;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        border-radius: 10px;
-        overflow: hidden;
-        background-color: #e9ecef;
-
-        & .card_img {
-          height: 65%;
-          width: 100%;
-
-          & img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-          }
-        }
-
-        & .card_especialidad {
-          margin: 10px 10px 20px 10px;
-
-          & div {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-          }
-
-          & p {
-            margin: 0px 0px 0px 20px;
-          }
-        }
-
-      }
-
-      & .card_back {
-        transform: rotateY(180deg);
-        padding: 15px;
-      }
-    }
-  }
-
-  & article:hover .card {
-    transform: rotateY(180deg);
+  
+  .btn_turno{
+    background-color:#88d8a3;
+    color: white;
   }
 }
