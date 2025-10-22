@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administración de Médicos - Clínica SEDAS</title>
+    <!-- Link CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/headeryfooter.css">
+    <link rel="stylesheet" href="css/contacto.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <nav class="navbar navbar-expand-md">
+        <div class="contanier-fluid d-flex flex-column align-items-center">  
+                <!--<a href="#" class="logo"> -->
+                <a class="navbar-brand" href="#">
+                    <img src="./css/img/logo.png" alt="" width="150">
+                </a>
+                <!-- boton del menu responsive -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavegacion" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <!-- menu -->
+                <div class="collapse navbar-collapse" id="menuNavegacion">
+                <!-- <nav class="nav container"> -->
+                <!-- <ul class="nav-menu" id="nav-menu"> -->
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Inicio</a></li>
+                    <li class="nav-item"><a href="Institucion/institucional.html" class="nav-link">Institucional</a></li>
+                    <li class="nav-item"><a href="Institucion/equipo_medico.html" class="nav-link">Equipo Médico</a></li>
+                    <li class="nav-item"><a href="contacto.html" class="nav-link">Contacto</a></li>
+                </ul>
+                <!-- </nav> -->
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container my-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="card shadow">
+                    <div class="card-header bg-success text-white">
+                        <h2 class="my-2">Agregar nuevo profesional</h2>
+                    </div>
+                    <div class="card-body">
+                        <form id="formMedico" novalidate>
+                            
+                            <div class="mb-3">
+                                <h6 class="form-label">Nombre completo*</h6>
+                                <input type="text" class="form-control" id="nombre" 
+                                    placeholder="Nombre y Apellido del profesional" required>
+                                <div class="invalid-feedback">
+                                    Por favor ingrese el nombre completo del profesional
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <h6 class="form-label">Matrícula profesional*</h6>
+                                <input type="number" class="form-control" id="matricula" 
+                                    placeholder="Número de matrícula" required>
+                                <div class="invalid-feedback">
+                                    Por favor ingrese la matrícula profesional
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <h6 class="form-label">Especialidad*</h6>
+                                <input type="text" class="form-control" id="especialidad" 
+                                    placeholder="Cardiología, Pediatría, etc." required>
+                                <div class="invalid-feedback">
+                                    Por favor ingrese la especialidad médica
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <h6 class="form-label">Descripción*</h6>
+                                <textarea class="form-control" id="description" rows="3"
+                                    placeholder="Breve descripción del profesional y su especialización" required></textarea>
+                                <div class="invalid-feedback">
+                                    Por favor ingrese una descripción del profesional
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <h6 class="form-label">Seleccione la/s Obra/s Social/es que acepta*</h6>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="OSDE" id="osOSDE">
+                                    <label class="form-check-label" for="osOSDE">OSDE</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="SWISS MEDICAL" id="osSwiss">
+                                    <label class="form-check-label" for="osSwiss">SWISS MEDICAL</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="GALENO" id="osGaleno">
+                                    <label class="form-check-label" for="osGaleno">GALENO</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="MEDICUS" id="osMedicus">
+                                    <label class="form-check-label" for="osMedicus">MEDICUS</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="OMINT" id="osOmint">
+                                    <label class="form-check-label" for="osOmint">OMINT</label>
+                                </div>
+                                <div class="invalid-feedback" id="osError" style="display: none;">
+                                    Por favor seleccione al menos una obra social
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <h6 class="form-label">Foto del profesional*</h6>
+                                <input type="file" class="form-control" id="photo" 
+                                    accept="image/*" required>
+                                <div class="invalid-feedback">
+                                    Por favor cargue una foto del profesional
+                                </div>
+                                <small class="form-text text-muted">
+                                    Seleccione una imagen (JPG, PNG) menor a 500KB
+                                </small>
+                            </div>
+
+                            <div class="mb-3">
+                                <h6 class="form-label">Valor de consulta*</h6>
+                                <input type="number" class="form-control" id="valorConsulta" 
+                                    placeholder="Valor en pesos, por ejemplo 6000" step="0.01" min="0" required>
+                                <div class="invalid-feedback">
+                                    Por favor ingrese el valor de la consulta
+                                </div>
+                            </div>
+
+                            <h6 class="mt-3 text-danger">
+                                * Campos obligatorios
+                            </h6>
+
+                            <div class="d-grid gap-2 d-md-flex justify-content-md-end mt-4">
+                                <button type="button" class="btn btn-secondary" onclick="limpiarFormulario()">
+                                    Resetear
+                                </button>
+                                <button type="submit" class="btn btn-success">
+                                    Guardar
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="modal fade" id="modalExito" tabindex="-1" aria-labelledby="modalExitoLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header bg-success text-white">
+                    <h5 class="modal-title" id="modalExitoLabel">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-check-circle-fill me-2" viewBox="0 0 16 16">
+                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+                        </svg>
+                        ¡Profesional agregado exitosamente!
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center py-4">
+                    <p class="mb-4">El profesional ha sido registrado correctamente.</p>
+                </div>
+                    <button type="button" class="m-3 btn btn-success" onclick="agregarOtro()">
+                        Cerrar
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2025 UNER: IDW (2025) Grupo 45. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="js/form_medicos.js"></script>
+</body>
+
+</html>
