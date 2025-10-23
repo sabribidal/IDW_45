@@ -6,6 +6,17 @@ const modalE = document.querySelector('#modalEliminar')
 const modal = new bootstrap.Modal(modalE);
 let idEliminar=null
 
+async function cargarMedicos() {
+    try{
+        const response = await fetch('../data/profesionales.json')
+        const data = await response.json()
+        profesionales.push(...data.profesionales);
+        creartabla();
+    } catch (e){
+        console.error(e);
+    }
+}
+
 function creartabla(){
     let tr=''
     profesionales.forEach(medico =>{
@@ -17,7 +28,7 @@ function creartabla(){
                             <td>${medico.description}</td>
                             <td>${medico.OS}</td>
                             <td>${medico.valorConsulta}</td>
-                            <td><button class="btn btn-outline-success" onclick="Eliminar(${medico.id})">Eliminar</button></td>
+                            <td><button class="btn btn-outline-danger" onclick="Eliminar(${medico.id})">Eliminar</button></td>
                             <td><button class="btn btn-outline-success" onclick="Modificar(${medico.id})">Modificar</button></td>
                         </tr>`
     })
@@ -115,3 +126,4 @@ function limpiarFormulario() {
 }
 
 document.getElementById('formMedico').addEventListener('submit', guardarMedico)
+document.addEventListener('DOMContentLoaded', cargarMedicos)
