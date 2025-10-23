@@ -6,10 +6,15 @@ function validarUsuario(event){
     const usuarioIng = document.getElementById('floatingInput').value;
     const contrasenaUsua = document.getElementById('floatingPassword').value;
     const mensaje = document.querySelector('#mensaje');
+    const carga = document.querySelector('#carga')
 
     if((usuarioIng === cliente.Usuario) && (contrasenaUsua === cliente.Password)){
-        mensaje.className = 'text-success p-3 mb-2 bg-success-subtle';
+        mensaje.className = 'text-success p-3 mb-2 bg-success-subtle fs-3 text-center';
         mensaje.textContent = 'Bienvenido Cliente'; 
+        carga.innerHTML=`<button class="btn btn-info" type="button" disabled>
+                            <span class="spinner-border spinner-border-sm" aria-hidden="true"></span>
+                            <span role="status">Espere unos segundos...</span>
+                            </button>`
         
         localStorage.setItem('sesion', JSON.stringify({
             tipo:'cliente',
@@ -18,11 +23,16 @@ function validarUsuario(event){
         }));
 
         setTimeout(() => {
+
             window.location.href = '../Institucion/equipo_medico.html';
         }, 2000);
     } else if((usuarioIng === admin.Usuario) && (contrasenaUsua === admin.Password)){
-        mensaje.className = 'text-success p-3 mb-2 bg-success-subtle';
+        mensaje.className = 'text-success p-3 mb-2 bg-success-subtle fs-3 text-center';
         mensaje.textContent = 'Bienvenido Administrador';
+        carga.innerHTML=`<button class="btn btn-info" type="button" disabled>
+                            <span class="spinner-border spinner-border-sm" aria-hidden="true"></span>
+                            <span role="status">Espere unos segundos...</span>
+                        </button>`
         
                 localStorage.setItem('sesion', JSON.stringify({
             tipo:'admin',
@@ -36,6 +46,19 @@ function validarUsuario(event){
     } else {
         mensaje.className = 'p-3 mb-2 bg-danger-subtle text-danger-emphasis';
         mensaje.textContent = 'Usuario o Contraseña incorrectos, intente nuevamente';
+    }
+}
+
+function mostrarBotonCerrar(){
+    const boton = document.getElementById('btnCerrarSesion');
+    const sesion = localStorage.getItem('sesion');
+
+    if (boton){
+        if(sesion){
+            boton.style.display='block';
+        } else {
+            boton.style.display='none'
+        }
     }
 }
 
@@ -57,7 +80,6 @@ function cerrarSesion(){
     window.location.href='../index.html';
 }
 
-export {cerrarSesion}
 
 // document.getElementById('form_inicio').addEventListener('submit', validarUsuario);
 document.addEventListener('DOMContentLoaded', () =>{
@@ -69,4 +91,8 @@ document.addEventListener('DOMContentLoaded', () =>{
     if (Cerrarusuarios){
         Cerrarusuarios.addEventListener('click', cerrarSesion)
     }
+    mostrarBotonCerrar();
 });
+
+
+export {cerrarSesion, mostrarBotonCerrar}

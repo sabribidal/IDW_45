@@ -37,7 +37,7 @@
                         <li class="nav-item"><a href="#" class="nav-link">Equipo Médico</a></li>
                         <li class="nav-item"><a href="../contacto.html" class="nav-link">Contacto</a></li>
                         <li class="nav-item">
-                            <button class="btn btn-outline-danger" id="btnCerrarSesion">
+                            <button class="btn btn-info mt-2" id="btnCerrarSesion" style="display: none;">
                                 Cerrar Sesión
                             </button>
                         </li>
@@ -76,8 +76,10 @@
     <script src="../js/equipo_medico.js"></script>
     <!-- Agregar antes del cierre del body -->
     <script type="module">
-        import { cerrarSesion } from '../js/validar_usuario.js';
+        import { cerrarSesion, mostrarBotonCerrar} from '../js/validar_usuario.js';
         document.getElementById('btnCerrarSesion').addEventListener('click', cerrarSesion);
+        document.addEventListener('DOMContentLoaded', mostrarBotonCerrar);
+
     </script>
 </body>
 
