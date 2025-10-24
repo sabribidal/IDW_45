@@ -18,7 +18,7 @@ function validarUsuario(event){
         }));
 
         setTimeout(() => {
-            window.location.href = '/Institucion/equipo_medico.html';
+            window.location.href = './Institucion/equipo_medico.html';
         }, 2000);
     } else if((usuarioIng === admin.Usuario) && (contrasenaUsua === admin.Password)){
         mensaje.className = 'text-success p-3 mb-2 bg-success-subtle';
@@ -31,7 +31,7 @@ function validarUsuario(event){
         }));
 
         setTimeout(() => {
-            window.location.href = '/form_medicos.html';
+            window.location.href = './form_medicos.html';
         }, 2000);
     } else {
         mensaje.className = 'p-3 mb-2 bg-danger-subtle text-danger-emphasis';
