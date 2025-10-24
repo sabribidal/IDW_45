@@ -4,11 +4,14 @@ const card_medico = document.querySelector('#card_medico');
 //crear una funcion para cargar los datos de los profesionales en el archivo equipo_medico.html
 function cargarProfesionales() {
     const profesionales = obtenerProfesionales();
+    if (!Array.isArray(profesionales)) {
+        profesionales = [];
+    }
     card_medico.innerHTML = '';
     profesionales.forEach(profesional => {
         const card = document.createElement('div');
         card.classList.add('card', 'm-2');  
-        card.style.width = '18rem;';
+        card.style.width = '18rem';
         card.innerHTML = `
             <img src="${profesional.photo}" class="card-img-top" alt="Foto de ${profesional.nombre}">
             <div class="card-body">

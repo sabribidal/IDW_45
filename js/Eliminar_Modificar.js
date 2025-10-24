@@ -8,7 +8,7 @@ let idEliminar=null
 
 async function cargarMedicos() {
     try{
-        const response = await fetch('../data/profesionales.json')
+        const response = await fetch('./data/profesionales.json')
         const data = await response.json()
         profesionales.push(...data.profesionales);
         creartabla();
@@ -41,6 +41,7 @@ document.getElementById('aceptar').addEventListener('click', function() {
         if (index !== -1) {
             profesionales.splice(index, 1);
             guardarProfesionales(profesionales)
+            profesionales = data.profesionales || []
             creartabla();
             modal.hide();
         }
