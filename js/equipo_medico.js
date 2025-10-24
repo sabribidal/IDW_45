@@ -57,7 +57,8 @@ function obtenerProfesionales() {
     }
     
     try {
-        return JSON.parse(data);
+        const parsed = JSON.parse(data);
+        return parsed.profesionales || [];
     } catch (error) {
         console.error('Error al parsear datos:', error);
         return [];
