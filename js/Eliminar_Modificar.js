@@ -35,44 +35,45 @@ function creartabla(){
     tabla.innerHTML=tr
 }
 
-document.getElementById('aceptar').addEventListener('click', function() {
-    if (idEliminar !== null){
-        const index = profesionales.findIndex(medico => medico.id === idEliminar)
-        if (index !== -1) {
-            profesionales.splice(index, 1);
-            guardarProfesionales(profesionales)
-            profesionales = data.profesionales || []
-            creartabla();
-            modal.hide();
-        }
-        idEliminar = null
-    }
-});
-
 function Eliminar(id) {
-    idEliminar = id
+    idEliminar = id;
     modal.show();
 }
 
+document.getElementById('aceptar').addEventListener('click', function() {
+    if (idEliminar !== null) {
+        const index = profesionales.findIndex(medico => medico.id === idEliminar);
+        if (index !== -1) {
+            profesionales.splice(index, 1);
+            guardarProfesionales(profesionales);
+            creartabla();
+            modal.hide();
+        }
+        idEliminar = null;
+    }
+});
+
 function Modificar(id) {
     medicoEditando = profesionales.find(medico => medico.id === id);
-    
-    if (medicoEditando) {
-        document.getElementById('nombre').value = medicoEditando.nombre;
-        document.getElementById('matricula').value = medicoEditando.matricula;
-        document.getElementById('especialidad').value = medicoEditando.especialidad;
-        document.getElementById('description').value = medicoEditando.description;
-        document.getElementById('valorConsulta').value = medicoEditando.valorConsulta;
-        
-        const checkboxes = document.querySelectorAll('.form-check-input[type="checkbox"]');
-        checkboxes.forEach(checkbox => {
-            checkbox.checked = medicoEditando.OS.includes(checkbox.value);
-        });
-        
-        document.querySelector('button[type="submit"]').textContent = 'Actualizar';
-        
-        document.querySelector('.card').scrollIntoView({ behavior: 'smooth' });
-    }
+
+    if (!medicoEditando) return; // Salir si no se encuentra
+
+    document.getElementById('nombre').value = medicoEditando.nombre || '';
+    document.getElementById('matricula').value = medicoEditando.matricula || '';
+    document.getElementById('especialidad').value = medicoEditando.especialidad || '';
+    document.getElementById('description').value = medicoEditando.description || '';
+    document.getElementById('valorConsulta').value = medicoEditando.valorConsulta || '';
+
+    const checkboxes = document.querySelectorAll('.form-check-input[type="checkbox"]');
+    checkboxes.forEach(checkbox => {
+        checkbox.checked = medicoEditando.OS ? medicoEditando.OS.includes(checkbox.value) : false;
+    });
+
+    const btnSubmit = document.querySelector('button[type="submit"]');
+    if (btnSubmit) btnSubmit.textContent = 'Actualizar';
+
+    const formulario = document.getElementById('formMedico');
+    if (formulario) formulario.scrollIntoView({ behavior: 'smooth' });
 }
 
 function guardarMedico(e){
