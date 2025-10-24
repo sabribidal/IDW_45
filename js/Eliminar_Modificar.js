@@ -26,27 +26,27 @@ function creartabla(){
                             <td>${medico.matricula}</td>
                             <td>${medico.especialidad}</td>
                             <td>${medico.description}</td>
-                            <td>${medico.OS}</td>
+                            <td>${medico.OS.join(', ')}</td>
                             <td>${medico.valorConsulta}</td>
-                            <td><button class="btn btn-outline-danger" onclick="Eliminar(${medico.id})">Eliminar</button></td>
-                            <td><button class="btn btn-outline-success" onclick="Modificar(${medico.id})">Modificar</button></td>
+                            <td><button class="btn btn-outline-danger" onclick="Eliminar('${medico.id}')">Eliminar</button></td>
+                            <td><button class="btn btn-outline-success" onclick="Modificar('${medico.id}')">Modificar</button></td>
                         </tr>`
     })
     tabla.innerHTML=tr
 }
+
 document.getElementById('aceptar').addEventListener('click', function() {
     if (idEliminar !== null){
-        const index = profesionales.findIndex(medico => medico.id === parseInt(idEliminar));
+        const index = profesionales.findIndex(medico => medico.id === idEliminar)
         if (index !== -1) {
-        profesionales.splice(index, 1);
-        creartabla();
-        modal.hide();
+            profesionales.splice(index, 1);
+            guardarProfesionales(profesionales)
+            creartabla();
+            modal.hide();
         }
         idEliminar = null
     }
 });
-        
-
 
 function Eliminar(id) {
     idEliminar = id
@@ -54,7 +54,7 @@ function Eliminar(id) {
 }
 
 function Modificar(id) {
-    medicoEditando = profesionales.find(medico => medico.id === parseInt(id));
+    medicoEditando = profesionales.find(medico => medico.id === id);
     
     if (medicoEditando) {
         document.getElementById('nombre').value = medicoEditando.nombre;
@@ -103,7 +103,7 @@ function guardarMedico(e){
         document.querySelector('button[type="submit"]').textContent = 'Guardar';
     } else {
         const nuevoMedico = {
-            id: profesionales.length + 1,
+            id: String(profesionales.length + 1),
             nombre: nom,
             matricula: mat,
             especialidad: esp,
@@ -113,7 +113,7 @@ function guardarMedico(e){
         };
         profesionales.push(nuevoMedico);
     }
-
+    guardarProfesionales(profesionales)
     creartabla();
     document.getElementById('formMedico').reset();
     alert(medicoEditando ? 'Médico actualizado correctamente' : 'Médico agregado correctamente');
