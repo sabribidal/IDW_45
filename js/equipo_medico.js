@@ -31,6 +31,8 @@ function cargarProfesionales() {
 
     profesionales.forEach(profesional => {
         const card = document.createElement('div');
+        const valorConsultaNumerico = parseFloat(profesional.valorConsulta);
+    const valorFormateado = isNaN(valorConsultaNumerico) ? 'N/A' : valorConsultaNumerico.toFixed(2);
         card.classList.add('card', 'm-2');  
         card.style.width = '18rem';
         card.innerHTML = `
@@ -74,3 +76,11 @@ document.addEventListener('DOMContentLoaded', async function() {
     await inicializarDatos();
     cargarProfesionales();
 });
+
+
+function guardarProfesionales(profesionales) {
+    const data = {
+        profesionales: profesionales
+    };
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
+}

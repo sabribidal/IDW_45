@@ -40,6 +40,7 @@ document.getElementById('aceptar').addEventListener('click', function() {
         const index = profesionales.findIndex(medico => medico.id === idEliminar)
         if (index !== -1) {
             profesionales.splice(index, 1);
+            guardarProfesionales(profesionales)
             creartabla();
             modal.hide();
         }
@@ -112,7 +113,7 @@ function guardarMedico(e){
         };
         profesionales.push(nuevoMedico);
     }
-
+    guardarProfesionales(profesionales)
     creartabla();
     document.getElementById('formMedico').reset();
     alert(medicoEditando ? 'Médico actualizado correctamente' : 'Médico agregado correctamente');
