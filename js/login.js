@@ -13,27 +13,32 @@ async function validarUsuario(event){
             body: JSON.stringify({
                 username: usuarioIng,
                 password: contrasenaUsua,
+                expiresInMins: 30,
             }),
+           // credentials: 'include'
         });
         
         const data = await response.json();
+        console.log(data);
 
+        //if (response.ok && data.token) 
         if (response.ok) {
             sessionStorage.setItem('username', data.username);
             sessionStorage.setItem('token', data.token);
-            sessionStorage.setItem('rol', data.role || 'cliente'); // Asignar rol si está disponible
-            
+            sessionStorage.setItem('rol', data.role || 'admin'); // Asignar rol si está disponible
+            const rol = data.role || 'admin';
+
             mensaje.className = 'text-success p-3 mb-2 bg-success-subtle';
             mensaje.textContent = `Bienvenido ${data.username}`;
 
             localStorage.setItem('sesion', JSON.stringify({
-                    tipo: data.role || 'cliente',
+                    tipo: data.role || 'admin',
                     usuario:usuarioIng,
                     tiempo: new Date().getTime()
             }));
 
             // Redirigir según el rol del usuario
-            if (data.role === 'admin') {
+            if (rol === 'admin') {
                 setTimeout(() => {
                     window.location.href = './form_medicos.html';
                 }, 2000);
