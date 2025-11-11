@@ -1,3 +1,17 @@
+async function buscarRolUsuario(idusuario){
+    try {
+        const response = await fetch(`https://dummyjson.com/users/${idusuario}`, {
+            method: 'GET',
+            headers: { 'Content-Type': 'application/json' },            
+        });
+        const data = await response.json();
+        console.log(data);
+        return data.role || 'admin'; // Asignar rol si está disponible
+    } catch (error) {
+        console.error('Error al buscar el rol del usuario:', error);
+        return 'cliente'; // Valor por defecto en caso de error
+    }
+}
 
 async function validarUsuario(event){
     event.preventDefault();
@@ -23,16 +37,20 @@ async function validarUsuario(event){
 
         //if (response.ok && data.token) 
         if (response.ok) {
+            const idusuario = data.id;
+            const rol = await buscarRolUsuario(idusuario);
+
             sessionStorage.setItem('username', data.username);
-            sessionStorage.setItem('token', data.token);
-            sessionStorage.setItem('rol', data.role || 'admin'); // Asignar rol si está disponible
-            const rol = data.role || 'admin';
+            sessionStorage.setItem('token', data.accessToken);
+            sessionStorage.setItem('idusuario', data.id);
+            sessionStorage.setItem('rol', rol || 'admin'); // Asignar rol si está disponible
+            
 
             mensaje.className = 'text-success p-3 mb-2 bg-success-subtle';
             mensaje.textContent = `Bienvenido ${data.username}`;
 
             localStorage.setItem('sesion', JSON.stringify({
-                    tipo: data.role || 'admin',
+                    tipo: rol || 'admin',
                     usuario:usuarioIng,
                     tiempo: new Date().getTime()
             }));
@@ -56,8 +74,8 @@ async function validarUsuario(event){
                 usuario: data.username,
                 nombre: data.firstName,
                 apellido: data.lastName,
-                token: data.token,
-                role: data.role
+                token: data.accessToken,
+                role: rol
             };
         } else {
             mensaje.className = 'p-3 mb-2 bg-danger-subtle text-danger-emphasis';
@@ -77,11 +95,11 @@ async function validarUsuario(event){
     }   
 }
 
-
 function cerrarSesionLogin(){
     sessionStorage.removeItem('username');
     sessionStorage.removeItem('token');
     sessionStorage.removeItem('rol');
+    sessionStorage.removeItem('idusuario');
     localStorage.removeItem('sesion');
     window.location.href='../index.html';
 }
