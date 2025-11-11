@@ -182,3 +182,74 @@ document.getElementById('formMedico').addEventListener('submit', async function(
 document.querySelectorAll('input[type="checkbox"]').forEach(checkbox => {
     checkbox.addEventListener('change', validarObrasSociales);
 });
+
+// Cargar especialidades desde localStorage
+function cargarEspecialidades(){
+    const especialidadJson = localStorage.getItem('especialidades')
+    return especialidadJson ? JSON.parse(especialidadJson) : []
+}
+
+// Cargar obras sociales desde localStorage
+function cargarObrasSociales(){
+    const obrasJson = localStorage.getItem('obras sociales')
+    return obrasJson ? JSON.parse(obrasJson) : []
+}
+
+// Llenar dinámicamente el select de especialidades
+function cargarSelectEspecialidades(){
+    const especialidades = cargarEspecialidades();
+    const selectEspecialidad = document.getElementById('especialidad');
+    
+    // Limpiar opciones previas (excepto la primera si es placeholder)
+    selectEspecialidad.innerHTML = '<option value="">Seleccione una especialidad</option>';
+    
+    especialidades.forEach(esp => {
+        const option = document.createElement('option');
+        option.value = esp.especialidad;
+        option.textContent = esp.especialidad;
+        selectEspecialidad.appendChild(option);
+    });
+}
+
+// Llenar dinámicamente los checkboxes de obras sociales
+function cargarCheckboxesObrasSociales(){
+    const obrasSociales = cargarObrasSociales();
+    const contenedorCheckboxes = document.getElementById('contenedorObrasSociales');
+    
+    // Limpiar checkboxes previos
+    contenedorCheckboxes.innerHTML = '';
+    
+    obrasSociales.forEach(obra => {
+        const div = document.createElement('div');
+        div.className = 'form-check';
+        
+        const input = document.createElement('input');
+        input.type = 'checkbox';
+        input.className = 'form-check-input';
+        input.value = obra.obraSocial;
+        input.id = `os${obra.id}`;
+        
+        const label = document.createElement('label');
+        label.className = 'form-check-label';
+        label.htmlFor = `os${obra.id}`;
+        label.textContent = obra.obraSocial;
+        
+        div.appendChild(input);
+        div.appendChild(label);
+        contenedorCheckboxes.appendChild(div);
+    });
+}
+
+// Escuchar cambios en localStorage (para otras pestañas/ventanas)
+window.addEventListener('storage', function(e) {
+    if (e.key === 'especialidades' || e.key === 'obras sociales') {
+        cargarSelectEspecialidades();
+        cargarCheckboxesObrasSociales();
+    }
+});
+
+// Inicializar cuando carga la página
+document.addEventListener('DOMContentLoaded', function() {
+    cargarSelectEspecialidades();
+    cargarCheckboxesObrasSociales();
+});

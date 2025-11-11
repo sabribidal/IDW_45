@@ -46,9 +46,24 @@
                 <!-- </nav> -->
             </div>
         </nav>
+
     </header>
 
     <main class="container my-5">
+                <nav class="navbar bg-dark-subtle rounded-5 mb-5 ">
+                    <div class="container">
+                        <span class="navbar-brand" href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-hammer" viewBox="0 0 16 16">
+                                <path d="M9.972 2.508a.5.5 0 0 0-.16-.556l-.178-.129a5 5 0 0 0-2.076-.783C6.215.862 4.504 1.229 2.84 3.133H1.786a.5.5 0 0 0-.354.147L.146 4.567a.5.5 0 0 0 0 .706l2.571 2.579a.5.5 0 0 0 .708 0l1.286-1.29a.5.5 0 0 0 .146-.353V5.57l8.387 8.873A.5.5 0 0 0 14 14.5l1.5-1.5a.5.5 0 0 0 .017-.689l-9.129-8.63c.747-.456 1.772-.839 3.112-.839a.5.5 0 0 0 .472-.334"/>
+                            </svg>
+                        </span>
+                        <a class="nav-link fw-bolder" href="form_medicos.html">MEDICOS/INICIO</a>
+                        <a class="nav-link fw-bolder" href="administrador/especialidades.html">ESPECIALIDADES</a>
+                        <a class="nav-link fw-bolder" href="administrador/obras_sociales.html">OBRAS SOCIALES</a>
+                        <a class="nav-link fw-bolder" href="administrador/turnos.html">TURNOS</a>
+                        <a class="nav-link fw-bolder" href="administrador/calendario.html" >CALENDARIO</a>
+                    </div>
+                </nav>
         <div class="row justify-content-center">
             <div class="col-lg-8">
                 <div class="card shadow">
@@ -78,8 +93,9 @@
 
                             <div class="mb-3">
                                 <h6 class="form-label">Especialidad*</h6>
-                                <input type="text" class="form-control" id="especialidad" 
-                                    placeholder="Cardiología, Pediatría, etc." required>
+                                <select class="form-control" id="especialidad" required>
+                                    <option value="">Seleccione una especialidad</option>
+                                </select>
                                 <div class="invalid-feedback">
                                     Por favor ingrese la especialidad médica
                                 </div>
@@ -96,25 +112,7 @@
 
                             <div class="mb-3">
                                 <h6 class="form-label">Seleccione la/s Obra/s Social/es que acepta*</h6>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="OSDE" id="osOSDE">
-                                    <label class="form-check-label" for="osOSDE">OSDE</label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="SWISS MEDICAL" id="osSwiss">
-                                    <label class="form-check-label" for="osSwiss">SWISS MEDICAL</label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="GALENO" id="osGaleno">
-                                    <label class="form-check-label" for="osGaleno">GALENO</label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="MEDICUS" id="osMedicus">
-                                    <label class="form-check-label" for="osMedicus">MEDICUS</label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="OMINT" id="osOmint">
-                                    <label class="form-check-label" for="osOmint">OMINT</label>
+                                <div id="contenedorObrasSociales">
                                 </div>
                                 <div class="invalid-feedback" id="osError" style="display: none;">
                                     Por favor seleccione al menos una obra social
