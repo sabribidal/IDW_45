@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendario</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/headeryfooter.css">
+    <link rel="stylesheet" href="../css/contacto.css">
+    <link rel="stylesheet" href="../css/calendario.css">
+</head>
+<body class=" bg-light bg-gradient">
+    <header>
+        <nav class="navbar bg-dark-subtle mb-5 w-75 p-3 mx-auto rounded-5 rounded-top-0">
+            <div class="container">
+                <span class="navbar-brand">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-hammer" viewBox="0 0 16 16">
+                        <path d="M9.972 2.508a.5.5 0 0 0-.16-.556l-.178-.129a5 5 0 0 0-2.076-.783C6.215.862 4.504 1.229 2.84 3.133H1.786a.5.5 0 0 0-.354.147L.146 4.567a.5.5 0 0 0 0 .706l2.571 2.579a.5.5 0 0 0 .708 0l1.286-1.29a.5.5 0 0 0 .146-.353V5.57l8.387 8.873A.5.5 0 0 0 14 14.5l1.5-1.5a.5.5 0 0 0 .017-.689l-9.129-8.63c.747-.456 1.772-.839 3.112-.839a.5.5 0 0 0 .472-.334"/>
+                    </svg>
+                </span>
+                <a class="nav-link fw-bolder" href="../form_medicos.html">MEDICOS/INICIO</a>
+                <a class="nav-link fw-bolder" href="/administrador/especialidades.html">ESPECIALIDADES</a>
+                <a class="nav-link fw-bolder" href="/administrador/obras_sociales.html">OBRAS SOCIALES</a>
+                <a class="nav-link fw-bolder" href="/administrador/turnos.html">TURNOS</a>
+                <a class="nav-link fw-bolder" href="/administrador/calendario.html">CALENDARIO</a>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="calendario-container d-flex flex-column border border-success-subtle rounded-4 border border-4">
+            <div class="calendario-header d-flex justify-content-between align-items-center m-5 ">
+                <div class="semana-info ">
+                    <h2 id="tituloSemana" class="h4 fw-semibold text-dark mb-1"></h2>
+                    <p id="rangoFechas" class="text-muted small"></p>
+                </div>
+                <div class="nav-buttons d-flex gap-2">
+                    <button class="btn nav-btn text-white px-4 py-2 rounded-3" onclick="cambiarSemana(-1)">‹ Anterior</button>
+                    <button class="btn nav-btn btn-hoy text-white px-4 py-2 rounded-3" onclick="irHoy()">Hoy</button>
+                    <button class="btn nav-btn text-white px-4 py-2 rounded-3" onclick="cambiarSemana(1)">Siguiente ›</button>
+                    <a href="/administrador/turnos.html" class="btn nav-btn text-white px-4 py-2 rounded-3 text-decoration-none" style="text-decoration: none;">+ Agregar Turno</a>
+                </div>
+            </div>
+            
+            <div class="semana-grid row row-cols-2 row-cols-md-3 row-cols-lg-6 row-cols-xl-7 g-2 m-4 " id="semanaGrid"></div>
+            
+            <div class="detalle-turnos rounded-3 p-4 bg-success border border-success bg-opacity-25" id="detalleTurnos">
+                <h3 class="h5 text-dark mb-3">Selecciona un día para ver los turnos</h3>
+                <div class="sin-turnos text-center text-muted py-4">
+                    <p>Haz clic en cualquier día de la semana para ver los turnos programados</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer mb-5 w-75 p-3 mx-auto   bg-light bg-gradient">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2025 UNER: IDW (2025) Grupo 45. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="/js/adminstrador/calendarios.js"></script>
+</body>
+</html>

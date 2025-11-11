@@ -1,0 +1,124 @@
+/* Estilos personalizados mínimos - Bootstrap maneja la mayoría */
+
+.calendario-header {
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.nav-btn {
+    background: #38a55c !important;
+    border: none !important;
+    transition: all 0.3s;
+    font-weight: 500;
+}
+
+.nav-btn:hover {
+    background: #1c552f !important;
+    transform: translateY(-2px);
+}
+
+.btn-hoy {
+    background: #035715 !important;
+}
+
+.btn-hoy:hover {
+    background: #10b333 !important;
+}
+
+.dia-card {
+    cursor: pointer;
+    transition: all 0.3s;
+    border: 3px solid transparent;
+    min-height: 150px;
+    box-shadow: 0 0 5px black;
+    margin-right: 10px;
+}
+
+.dia-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px black !important;
+}
+
+.dia-card.hoy {
+    background: linear-gradient(135deg, #667eea 0%, #53c053 100%) !important;
+    color: white !important;
+}
+
+.dia-card.hoy .dia-nombre,
+.dia-card.hoy .dia-numero,
+.dia-card.hoy .dia-mes,
+.dia-card.hoy .text-muted {
+    color: white !important;
+}
+
+.dia-card.seleccionado {
+    border-color: #667eea !important;
+    background: #e8eaf6 !important;
+}
+
+.dia-nombre {
+    font-size: 12px;
+    font-weight: 600;
+    color: #19630a;
+    text-transform: uppercase;
+}
+
+.dia-numero {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.dia-mes {
+    font-size: 11px;
+}
+
+.turnos-count {
+    font-size: 11px;
+    background: rgba(102, 126, 234, 0.15);
+    color: #19630a;
+    font-weight: 600;
+}
+
+.dia-card.hoy .turnos-count {
+    background: rgba(255, 255, 255, 0.25) !important;
+    color: white !important;
+}
+
+.turnos-lista {
+    font-size: 10px;
+    max-height: 60px;
+    overflow-y: auto;
+}
+
+.turno-item {
+    font-size: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.dia-card.hoy .turno-item {
+    background: rgba(255, 255, 255, 0.9) !important;
+}
+
+.detalle-turnos {
+    max-height: 500px;
+    overflow-y: auto;
+}
+
+.turno-hora {
+    color: #667eea;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.turno-detalle-card {
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    background-color: #d3d4d4;
+}
+
+@media (max-width: 768px) {
+    .dia-numero {
+        font-size: 24px;
+    }
+}
