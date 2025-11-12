@@ -86,6 +86,7 @@ main {
 
   img {
     width: 30%;
+    border-radius: 12px;
   }
 
   h4 {
@@ -95,12 +96,26 @@ main {
 
 .informacion {
   display: flex;
-  justify-content: space-evenly;
-  margin: 50px 0px;
+  width: 80%;
+  padding: 50px;
+  justify-content: space-between;
 
-  & h2 {
-    margin-bottom: 20px;
+  .texto {
+    width: 35%;
   }
+  .img {
+    width: 60%;
+  }
+
+  img {
+    width: 50%;
+    border-radius: 12px;
+  }
+
+
+  /* & h2 {
+    margin-bottom: 20px;
+  } */
 }
 
 
