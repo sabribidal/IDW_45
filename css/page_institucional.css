@@ -3,15 +3,12 @@
 *::after {
   box-sizing: border-box;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-body {
   margin: 0px;
 }
 
-main {
+/* main {
   margin: 0px 50px;
-}
+} */
 
 /* Seccion Mision-Valores-Vision */
 #mivavi {
