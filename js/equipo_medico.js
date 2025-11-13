@@ -41,7 +41,7 @@ function cargarProfesionales() {
                 <p class="card-text"><strong>Matrícula:</strong> ${profesional.matricula}</p>
                 <p class="card-text">${profesional.description}</p>
                 <p class="card-text"><strong>Obras Sociales:</strong> ${profesional.OS.join(', ')}</p>
-                <p class="card-text"><strong>Valor Consulta:</strong> $${profesional.valorConsulta.toFixed(2)}</p>
+                <p class="card-text"><strong>Valor Consulta:</strong> $${profesional.valorConsulta}</p>
             </div>
         `;
         card_medico.appendChild(card);
@@ -69,7 +69,6 @@ function verListaMedicos() {
     window.location.href = 'Institucion/equipo_medico.html';
 }
 
-// Inicializar cuando el DOM esté listo
 document.addEventListener('DOMContentLoaded', async function() {
     await inicializarDatos();
     cargarProfesionales();

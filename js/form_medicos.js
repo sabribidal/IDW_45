@@ -20,7 +20,7 @@ function cargarProfesionales() {
                 <p class="card-text"><strong>Matrícula:</strong> ${profesional.matricula}</p>
                 <p class="card-text">${profesional.description}</p>
                 <p class="card-text"><strong>Obras Sociales:</strong> ${profesional.OS.join(', ')}</p>
-                <p class="card-text"><strong>Valor Consulta:</strong> $${profesional.valorConsulta.toFixed(2)}</p>
+                <p class="card-text"><strong>Valor Consulta:</strong> $${profesional.valorConsulta}</p>
             </div>
         `;
         card_medico.appendChild(card);
@@ -170,6 +170,10 @@ document.getElementById('formMedico').addEventListener('submit', async function(
 
         guardarProfesionales(profesionales);
 
+        if (typeof cargarMedicos === 'function') {
+            cargarMedicos();
+        }
+
         const modal = new bootstrap.Modal(document.getElementById('modalExito'));
         modal.show();
         
@@ -240,7 +244,6 @@ function cargarCheckboxesObrasSociales(){
     });
 }
 
-// Escuchar cambios en localStorage (para otras pestañas/ventanas)
 window.addEventListener('storage', function(e) {
     if (e.key === 'especialidades' || e.key === 'obras sociales') {
         cargarSelectEspecialidades();
@@ -248,7 +251,6 @@ window.addEventListener('storage', function(e) {
     }
 });
 
-// Inicializar cuando carga la página
 document.addEventListener('DOMContentLoaded', function() {
     cargarSelectEspecialidades();
     cargarCheckboxesObrasSociales();
