@@ -10,8 +10,45 @@
     <link rel="stylesheet" href="../css/calendario.css">
 </head>
 <body class=" bg-light bg-gradient">
-    <header>
-        <nav class="navbar bg-dark-subtle mb-5 w-75 p-3 mx-auto rounded-5 rounded-top-0">
+    <header class="header">
+        <nav class="navbar navbar-expand-md w-100 px-5 p-0">
+            <div class="container-fluid d-flex align-items-center justify-content-between">
+                <!--<a href="#" class="logo"> -->
+                <a class="navbar-brand" href="#">
+                    <img src="../css/img/logo.png" alt="" width="150">
+                </a>
+                <!-- boton del menu responsive -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavegacion"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- menu -->
+                <div class="collapse navbar-collapse justify-content-center" id="menuNavegacion">
+                    <!-- <nav class="nav container"> -->
+                    <!-- <ul class="nav-menu" id="nav-menu"> -->
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a href="../index.html" class="nav-link">Inicio</a></li>
+                        <li class="nav-item"><a href="../Institucion/institucional.html" class="nav-link">Institucional</a>
+                        </li>
+                        <li class="nav-item"><a href="../Institucion/equipo_medico.html" class="nav-link">Equipo Médico</a>
+                        </li>
+                        <li class="nav-item"><a href="../contacto.html" class="nav-link">Contacto</a></li>
+                        <li class="nav-item ms-3">
+                            <a href="../admin_usuarios.html" class="btn btn-success">Usuarios</a>
+                        </li>
+                    </ul>
+                    <!-- </nav> -->
+                </div>
+
+                <!-- boton sección -->
+                <button class="btn btn_nav" id="btnCerrarSesion">Cerrar Seccion</button>
+            </div>
+        </nav>
+    </header>
+    
+    <main class="container my-5">
+        <nav class="navbar bg-dark-subtle mb-5 rounded-5">
             <div class="container">
                 <span class="navbar-brand">
                     <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-hammer" viewBox="0 0 16 16">
@@ -25,9 +62,6 @@
                 <a class="nav-link fw-bolder" href="/administrador/calendario.html">CALENDARIO</a>
             </div>
         </nav>
-    </header>
-    
-    <main>
         <section class="calendario-container d-flex flex-column border border-success-subtle rounded-4 border border-4">
             <div class="calendario-header d-flex justify-content-between align-items-center m-5 ">
                 <div class="semana-info ">
@@ -53,7 +87,7 @@
         </section>
     </main>
 
-    <footer class="footer mb-5 w-75 p-3 mx-auto   bg-light bg-gradient">
+    <footer class="footer w-100 mx-auto">
         <div class="container">
             <div class="footer-bottom">
                 <p>&copy; 2025 UNER: IDW (2025) Grupo 45. Todos los derechos reservados.</p>
@@ -62,5 +96,9 @@
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     <script src="/js/adminstrador/calendarios.js"></script>
+    <script type="module">
+        import { cerrarSesion } from '../js/validar_usuario.js';
+        document.getElementById('btnCerrarSesion').addEventListener('click', cerrarSesion);
+    </script>
 </body>
 </html>

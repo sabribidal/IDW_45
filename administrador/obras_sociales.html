@@ -1,31 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Obras Sociales</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/headeryfooter.css">
     <link rel="stylesheet" href="../css/contacto.css">
 </head>
+
 <body>
-    <header>
-            <nav class="navbar bg-dark-subtle mb-5 w-75 p-3 mx-auto rounded-5 rounded-top-0">
-                <div class="container">
-                    <span class="navbar-brand" href="#">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-hammer" viewBox="0 0 16 16">
-                            <path d="M9.972 2.508a.5.5 0 0 0-.16-.556l-.178-.129a5 5 0 0 0-2.076-.783C6.215.862 4.504 1.229 2.84 3.133H1.786a.5.5 0 0 0-.354.147L.146 4.567a.5.5 0 0 0 0 .706l2.571 2.579a.5.5 0 0 0 .708 0l1.286-1.29a.5.5 0 0 0 .146-.353V5.57l8.387 8.873A.5.5 0 0 0 14 14.5l1.5-1.5a.5.5 0 0 0 .017-.689l-9.129-8.63c.747-.456 1.772-.839 3.112-.839a.5.5 0 0 0 .472-.334"/>
-                        </svg>
-                    </span>
-                    <a class="nav-link fw-bolder" href="../form_medicos.html">MEDICOS/INICIO</a>
-                    <a class="nav-link fw-bolder" href="/administrador/especialidades.html">ESPECIALIDADES</a>
-                    <a class="nav-link fw-bolder" href="/administrador/obras_sociales.html">OBRAS SOCIALES</a>
-                    <a class="nav-link fw-bolder" href="/administrador/turnos.html">TURNOS</a>
-                    <a class="nav-link fw-bolder" href="/administrador/calendario.html" >CALENDARIO</a>
+    <header class="header">
+        <nav class="navbar navbar-expand-md w-100 px-5 p-0">
+            <div class="container-fluid d-flex align-items-center justify-content-between">
+                <!--<a href="#" class="logo"> -->
+                <a class="navbar-brand" href="#">
+                    <img src="../css/img/logo.png" alt="" width="150">
+                </a>
+                <!-- boton del menu responsive -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavegacion"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- menu -->
+                <div class="collapse navbar-collapse justify-content-center" id="menuNavegacion">
+                    <!-- <nav class="nav container"> -->
+                    <!-- <ul class="nav-menu" id="nav-menu"> -->
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a href="../index.html" class="nav-link">Inicio</a></li>
+                        <li class="nav-item"><a href="../Institucion/institucional.html" class="nav-link">Institucional</a>
+                        </li>
+                        <li class="nav-item"><a href="../Institucion/equipo_medico.html" class="nav-link">Equipo Médico</a>
+                        </li>
+                        <li class="nav-item"><a href="../contacto.html" class="nav-link">Contacto</a></li>
+                        <li class="nav-item ms-3">
+                            <a href="../admin_usuarios.html" class="btn btn-success">Usuarios</a>
+                        </li>
+                    </ul>
+                    <!-- </nav> -->
                 </div>
-            </nav>
+
+                <!-- boton sección -->
+                <button class="btn btn_nav" id="btnCerrarSesion">Cerrar Seccion</button>
+            </div>
+        </nav>
     </header>
-    <main> 
+
+    <main class="container my-5">
+        <nav class="navbar bg-dark-subtle mb-5 rounded-5">
+            <div class="container">
+                <span class="navbar-brand" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+                        class="bi bi-hammer" viewBox="0 0 16 16">
+                        <path
+                            d="M9.972 2.508a.5.5 0 0 0-.16-.556l-.178-.129a5 5 0 0 0-2.076-.783C6.215.862 4.504 1.229 2.84 3.133H1.786a.5.5 0 0 0-.354.147L.146 4.567a.5.5 0 0 0 0 .706l2.571 2.579a.5.5 0 0 0 .708 0l1.286-1.29a.5.5 0 0 0 .146-.353V5.57l8.387 8.873A.5.5 0 0 0 14 14.5l1.5-1.5a.5.5 0 0 0 .017-.689l-9.129-8.63c.747-.456 1.772-.839 3.112-.839a.5.5 0 0 0 .472-.334" />
+                    </svg>
+                </span>
+                <a class="nav-link fw-bolder" href="../form_medicos.html">MEDICOS/INICIO</a>
+                <a class="nav-link fw-bolder" href="/administrador/especialidades.html">ESPECIALIDADES</a>
+                <a class="nav-link fw-bolder" href="/administrador/obras_sociales.html">OBRAS SOCIALES</a>
+                <a class="nav-link fw-bolder" href="/administrador/turnos.html">TURNOS</a>
+                <a class="nav-link fw-bolder" href="/administrador/calendario.html">CALENDARIO</a>
+            </div>
+        </nav>
         <section class="row justify-content-center">
             <div class="col-lg-8">
                 <div class="card shadow">
@@ -34,17 +74,18 @@
                     </div>
                     <div class="card-body">
                         <form id="formObra" novalidate>
-                            
+
                             <div class="mb-3">
                                 <h6 class="form-label">Nombre de la obra social*</h6>
-                                <input type="text" class="form-control" id="nombre" 
+                                <input type="text" class="form-control" id="nombre"
                                     placeholder="Ej: Osde, Swiss Medical" required>
                             </div>
 
                             <div class="mb-3">
                                 <h6 class="form-label">Descripción*</h6>
                                 <textarea class="form-control" id="description" rows="3"
-                                    placeholder="Una explicación breve sobre como funciona y a quien va dirigidos." required></textarea>
+                                    placeholder="Una explicación breve sobre como funciona y a quien va dirigidos."
+                                    required></textarea>
                             </div>
 
                             <h6 class="mt-3 text-danger">
@@ -52,10 +93,12 @@
                             </h6>
 
                             <div class="d-grid gap-2 d-md-flex justify-content-md-end mt-4">
-                                <button class="btn btn-primary position-absolute bottom-0 start-0 mb-3 ms-3 bg-danger border border-danger" id="incorrecto" type="button" disabled style="display: none;">
+                                <button
+                                    class="btn btn-primary position-absolute bottom-0 start-0 mb-3 ms-3 bg-danger border border-danger"
+                                    id="incorrecto" type="button" disabled style="display: none;">
                                     <span class="spinner-grow spinner-grow-sm" aria-hidden="true"></span>
                                     <span role="status">Campos incompletos</span>
-                                    </button>
+                                </button>
                                 <button type="button" class="btn btn-secondary" onclick="limpiarFormulario()">
                                     Resetear
                                 </button>
@@ -73,10 +116,10 @@
             <table class="table">
                 <thead>
                     <tr>
-                    <th scope="col">ID</th>
-                    <th scope="col">OBRA SOCIAL</th>
-                    <th scope="col">DESCRIPCION</th>
-                    <th scope="col">COMANDOS</th>
+                        <th scope="col">ID</th>
+                        <th scope="col">OBRA SOCIAL</th>
+                        <th scope="col">DESCRIPCION</th>
+                        <th scope="col">COMANDOS</th>
                     </tr>
                 </thead>
                 <tbody id="obra">
@@ -89,7 +132,8 @@
                 <div class="modal-content">
                     <div class="modal-header bg-danger text-white">
                         <h5 class="modal-title" id="modalEliminarLabel">Confirmar eliminación</h5>
-                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                            aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
                         <p>¿Está seguro que desea eliminar esta obra social?</p>
@@ -103,14 +147,21 @@
         </div>
 
     </main>
-    <footer class="footer mb-5 w-75 p-3 mx-auto">
+    <footer class="footer w-100 mx-auto">
         <div class="container">
             <div class="footer-bottom">
                 <p>&copy; 2025 UNER: IDW (2025) Grupo 45. Todos los derechos reservados.</p>
             </div>
         </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
     <script src="../js/adminstrador/obraSocial.js"></script>
+    <script type="module">
+        import { cerrarSesion } from '../js/validar_usuario.js';
+        document.getElementById('btnCerrarSesion').addEventListener('click', cerrarSesion);
+    </script>
 </body>
+
 </html>
