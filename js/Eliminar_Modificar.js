@@ -6,15 +6,31 @@ const modalE = document.querySelector('#modalEliminar')
 const modal = new bootstrap.Modal(modalE);
 let idEliminar=null
 
-async function cargarMedicos() {
-    try{
-        const response = await fetch('./data/profesionales.json')
-        const data = await response.json()
-        profesionales.push(...data.profesionales);
-        creartabla();
-    } catch (e){
-        console.error(e);
+// Función para inicializar los datos desde el JSON (solo la primera vez)
+async function inicializarDatos() {
+    const data = localStorage.getItem(STORAGE_KEY);
+    
+    // Si no hay datos en localStorage, cargar desde el JSON
+    if (!data) {
+        try {
+            const response = await fetch('./data/profesionales.json');
+            const jsonData = await response.json();
+            localStorage.setItem(STORAGE_KEY, JSON.stringify(jsonData));
+            console.log('Datos cargados desde JSON al localStorage');
+        } catch (error) {
+            console.error('Error al cargar el archivo JSON:', error);
+        }
     }
+}
+
+function cargarMedicos() {
+    profesionales.length = 0;
+    
+    const medicosLS = obtenerProfesionales();
+    
+    profesionales.push(...medicosLS);
+    
+    creartabla();
 }
 
 function creartabla(){
@@ -56,7 +72,7 @@ document.getElementById('aceptar').addEventListener('click', function() {
 function Modificar(id) {
     medicoEditando = profesionales.find(medico => medico.id === id);
 
-    if (!medicoEditando) return; // Salir si no se encuentra
+    if (!medicoEditando) return;
 
     document.getElementById('nombre').value = medicoEditando.nombre || '';
     document.getElementById('matricula').value = medicoEditando.matricula || '';
@@ -127,5 +143,7 @@ function limpiarFormulario() {
     document.querySelector('button[type="submit"]').textContent = 'Guardar';
 }
 
-document.getElementById('formMedico').addEventListener('submit', guardarMedico)
-document.addEventListener('DOMContentLoaded', cargarMedicos)
+document.addEventListener('DOMContentLoaded', async function() {
+    await inicializarDatos();
+    cargarMedicos();
+});
