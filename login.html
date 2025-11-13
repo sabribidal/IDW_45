@@ -1,12 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Iniciar Sesion</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <!-- Links estilos -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/index.css">
 </head>
-<body>
+
+<body class="login_container">
     <section class="border w-50 p-3 m-5 mx-auto shadow-lg p-3 mb-5 bg-body-tertiary rounded bg-success-subtle ">
         <h1 class="mb-3 text-center">Iniciar Sesion</h1>
         <form id="form_inicio">
@@ -14,15 +20,19 @@
                 <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
                 <label for="floatingInput">Usuario</label>
             </div>
-            <div class="form-floating mb-3" >
+            <div class="form-floating mb-3">
                 <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
                 <label for="floatingPassword">Contraseña</label>
             </div>
-            <button type="submit" class="btn btn-primary m-3 mx-auto h-50 d-inline-block w-25 p-3 text-bg-success p-3 border border-0">ENTRAR</button>
+            <button type="submit"
+                class="btn btn-primary m-3 mx-auto h-50 d-inline-block w-25 p-3 text-bg-success p-3 border border-0">ENTRAR</button>
         </form>
         <p id="mensaje"></p>
     </section>
     <script type="module" src="js/login.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>

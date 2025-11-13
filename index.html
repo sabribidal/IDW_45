@@ -4,92 +4,117 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Clínica SADES</title>
+  <title>Clínica SEDAS</title>
   <!-- link para estilos -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
   <link rel="stylesheet" href="css/headeryfooter.css">
   <link rel="stylesheet" href="css/index.css">
 </head>
 
 <body>
-  
+
   <header class="header">
-    <nav class="navbar navbar-expand-md w-100 mx-4 p-0">
-      <div class="container-fluid d-flex align-items-center">  
-            <!--<a href="#" class="logo"> -->
-            <a class="navbar-brand" href="#">
-                <img src="./css/img/logo.png" alt="" width="150">
-            </a>
-            <!-- boton del menu responsive -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavegacion" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            
-            <!-- menu -->
-            <div class="collapse navbar-collapse justify-content-end" id="menuNavegacion">
-            <!-- <nav class="nav container"> -->
-              <!-- <ul class="nav-menu" id="nav-menu"> -->
-              <ul class="navbar-nav">
-                  <li class="nav-item"><a href="#" class="nav-link">Inicio</a></li>
-                  <li class="nav-item"><a href="Institucion/institucional.html" class="nav-link">Institucional</a></li>
-                  <li class="nav-item"><a href="Institucion/equipo_medico.html" class="nav-link">Equipo Médico</a></li>
-                  <li class="nav-item"><a href="contacto.html" class="nav-link">Contacto</a></li>
-                  <li class="nav-item ms-3"><a href="login.html" class="btn btn-secondary">Iniciar Sesion</a></li>
-              </ul>
-            <!-- </nav> -->
-            </div>
+    <nav class="navbar navbar-expand-md w-100 px-5 p-0">
+      <div class="container-fluid d-flex align-items-center justify-content-between">
+        <!--<a href="#" class="logo"> -->
+        <a class="navbar-brand" href="#">
+          <img src="./css/img/logo.png" alt="" width="150">
+        </a>
+
+        <!-- boton del menu responsive -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavegacion"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- menu -->
+        <div class="collapse navbar-collapse justify-content-center" id="menuNavegacion">
+          <!-- <nav class="nav container"> -->
+          <!-- <ul class="nav-menu" id="nav-menu"> -->
+          <ul class="navbar-nav">
+            <li class="nav-item"><a href="#" class="nav-link">Inicio</a></li>
+            <li class="nav-item"><a href="Institucion/institucional.html" class="nav-link">Institucional</a></li>
+            <li class="nav-item"><a href="Institucion/equipo_medico.html" class="nav-link">Equipo Médico</a></li>
+            <li class="nav-item"><a href="contacto.html" class="nav-link">Contacto</a></li>
+          </ul>
+          <!-- </nav> -->
         </div>
+
+        <!-- boton sección -->
+        <button class="btn btn_nav"><a href="login.html">Iniciar Seccion</a></button>
+      </div>
     </nav>
   </header>
 
+
   <main>
     <section class="bienvenidos">
-      <div class="portada"></div>
-      <h1>Bienvenidos a la Clínica SEDAS</h1>
-      <h3>Trabajamos por el bienestar completo de nuestros pacientes dando así una atención mas rápida y cercana.</h3>
-      <ul>
-        <li>Consultar obras sociales disponibles</li>
-        <li>Reservar turnos</li>
-        <li>Acceder a información importante</li>
-      </ul>
+      <div class="portada">
+        <h1>Transformar el cuidado de tu salud</h1>
+        <button class="btn"><a href="login.html">Reservar turno</a></button>
+      </div>
+      <div>
+      </div>
     </section>
 
-    <section class="informacion"">
-    <div>
-      <h2>Información importante</h2>
-      <p><strong>Horario de atención:</strong> Lunes a Viernes de 8 a 18 hs</p>
-      <p><strong> Dirección:</strong> Bv. Oro Verde 890, Gualeguaychú, Entre Ríos, CP 2820</p>
-      <p><strong> Teléfono fijo:</strong> (03446) 442-910</p>
-      <p><strong> Celular:</strong> +54 9 3446 593-208</p>
-      <p><strong>Emergencias:</strong> 0800-111-0000</p>
-    </div>
-    
-    <div>
-      <h2>Obras sociales con cobertura</h2>
-      <table border=" 1">
-      <tr>
-        <th>Obra Social</th>
-      </tr>
-      <tr>
-        <td>OSDE</td>
-      </tr>
-      <tr>
-        <td>IOSPER</td>
-      </tr>
-      <tr>
-        <td>Jerárquico</td>
-      </tr>
-      <tr>
-        <td>Swiss Medical</td>
-      </tr>
-      <tr>
-        <td>Galeno</td>
-      </tr>
-      <tr>
-        <td>Federada Salud</td>
-      </tr>
-      </table>
+    <section class="nosotros">
+      <div>
+        <h4>Trabajamos por el bienestar completo de nuestros pacientes dando así una atención mas rápida y cercana.
+        </h4>
+        <p><strong>Las respuestas correctas, desde el principio. </strong>La eficacia del tratamiento depende del
+          diagnóstico correcto. Nuestros expertos diagnostican y tratan los problemas médicos más complicados.</p>
       </div>
+      <img src="./css/img/medico.jpg" alt="">
+    </section>
+
+    <section class="informacion">
+      <div class="texto">
+        <h4 class="mb-4">Ubicaciones</h4>
+        <ul>
+          <li>Bv. Oro Verde 890, Gualeguaychú, Entre Ríos, CP 2820</li>
+          <li>Av. Coronel Díaz 1820, Palermo, Ciudad Autónoma de Buenos Aires, CP 1425</li>
+        </ul>
+      </div>
+      <div class="d-flex justify-content-end img">
+        <img src="./css/img/sede2.png" class="me-2 ms-2" alt="Imagen de la clínica">
+        <img src="./css/img/sede.png" alt="Imagen de la clínica">
+      </div>
+
+      <!-- <div>
+        <h2>Información importante</h2>
+        <p><strong>Horario de atención:</strong> Lunes a Viernes de 8 a 18 hs</p>
+        <p><strong> Teléfono fijo:</strong> (03446) 442-910</p>
+        <p><strong> Celular:</strong> +54 9 3446 593-208</p>
+        <p><strong>Emergencias:</strong> 0800-111-0000</p>
+      </div> -->
+
+      <!-- <div>
+        <h2>Obras sociales con cobertura</h2>
+        <table border=" 1">
+          <tr>
+            <th>Obra Social</th>
+          </tr>
+          <tr>
+            <td>OSDE</td>
+          </tr>
+          <tr>
+            <td>IOSPER</td>
+          </tr>
+          <tr>
+            <td>Jerárquico</td>
+          </tr>
+          <tr>
+            <td>Swiss Medical</td>
+          </tr>
+          <tr>
+            <td>Galeno</td>
+          </tr>
+          <tr>
+            <td>Federada Salud</td>
+          </tr>
+        </table>
+      </div> -->
     </section>
   </main>
 
@@ -100,5 +125,7 @@
       </div>
     </div>
   </footer>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
 </body>
