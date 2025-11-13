@@ -6,13 +6,34 @@
   margin: 0px;
 }
 
-/* main {
-  margin: 0px 50px;
-} */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.quienes_somos {
+  display: flex;
+  padding: 50px;
+  gap: 100px;
+  width: 80%;
+  align-items: center;
+
+  img {
+    width: 30%;
+    border-radius: 12px;
+  }
+
+  h3 {
+    margin-bottom: 20px;
+  }
+}
+
 
 /* Seccion Mision-Valores-Vision */
 #mivavi {
-  margin: 50px 0px;
+  padding: 50px;
 
   & h1 {
     text-align: center;
@@ -23,15 +44,41 @@
   }
 }
 
+
 /* Seccion Autoridades */
+.autoridades {
+  width: 90%;
+}
 #autoridades {
-  margin: 100px 0px;
+  padding: 50px;
   text-align: center;
 }
 
 
+/* Seccion Testimonio */
+.testimonio {
+  padding: 50px;
+  width: 80%;
+
+  p {
+    color: gray;
+  }
+
+  h4 {
+    margin-bottom: 20px;
+  }
+}
+
+
+/* Seccion Historia */
+#historia {
+    padding: 50px;
+}
+
 /* Seccion Certificaciones */
 #certificaciones {
+    padding: 50px;
+
   text-align: center;
   margin: 50px 0px 70px 0px;
 
@@ -58,9 +105,9 @@
   flex-wrap: wrap;
   justify-content: center;
   margin-bottom: 50px;
-  
-  .btn_turno{
-    background-color:#88d8a3;
+
+  .btn_turno {
+    background-color: #88d8a3;
     color: white;
   }
 }
