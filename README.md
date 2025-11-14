@@ -8,8 +8,8 @@ Miños Daniel
 Ramírez Santiago
 
 
-Usuario: Cliente123
-Password: 123456789mm
+Usuario: emilys
+Password: emilyspass
 
-Usuario: Admin123
-Password: 15151515aa
+Usuario: oliviaw
+Password: oliviawpass
